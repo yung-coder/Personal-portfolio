@@ -1,20 +1,13 @@
 import './App.css';
 import background from './back.mp4';
+import Videobackground from './components/Videobackground';
 function App() {
   return (
     <>
     <div className="App">
-       <div className='overlay'></div>
-       <div className='main'>
-       <video autoPlay loop muted className='video'>
-        <source
-          src={background}
-          type="video/mp4"
-        />
-      </video>
-      </div>
+      <Videobackground/>
       <div className='content'>
-        
+         
       </div>
     </div>
     </>
