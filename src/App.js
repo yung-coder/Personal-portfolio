@@ -1,5 +1,5 @@
 import './App.css';
-import background from './back.mp4';
+import Introduction from './components/Introduction';
 import Videobackground from './components/Videobackground';
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Videobackground/>
       <div className='content'>
-         
+         <Introduction/>
       </div>
     </div>
     </>
