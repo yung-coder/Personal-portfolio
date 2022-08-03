@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
@@ -8,37 +8,37 @@ const Navbar = () => {
             <ul class="flex text-sm space-y-1 space-x-4">
               <li></li>
               <li className="hover:text-white">
-                <a
-                  href=""
+                <Link
+                  to="/"
                   class=" py-2 block"
                   aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="hover:text-white">
-                <a
-                  href=""
+                <Link
+                  to="/projects"
                   class="py-2 block"
                 >
                   Projects
-                </a>
+                </Link>
               </li>
               <li className="hover:text-white">
-                <a
-                  href=""
+                <Link
+                  to="/About"
                   class="py-2 block"
                 >
                   About me
-                </a>
+                </Link>
               </li>
               <li className="hover:text-white">
-                <a
-                  href=""
+                <Link
+                  to="/Contact"
                   class="py-2 block"
                 >
                   Contact me
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
