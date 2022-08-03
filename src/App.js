@@ -1,6 +1,7 @@
 import './App.css';
 import Introduction from './components/Introduction';
 import Navbar from './components/Navbar';
+import Socials from './components/Socials';
 import Videobackground from './components/Videobackground';
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       </div>
       <div className='content'>
         <Introduction/>
+      </div>
+      <div className=''>
+        <Socials/>
       </div>
     </div>
     </>

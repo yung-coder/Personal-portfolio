@@ -52,8 +52,82 @@
   width: 100%;
 }
 
+.social{
+  display: flex;
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 40%;
+  margin-top: 30%;
+}
+.social {
+  position: fixed;
+  top: 30%;
+}
 
+.social ul {
+  list-style-type: none;
+  padding: 0;
+  transform: translatex(-270px);
+}
 
+.social ul li {
+  display: block;
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 300px;
+  text-align: right;
+  padding: 5px;
+  border-radius: 0 20px 30px 0;
+  transition: all 1s;
+}
+
+.social ul li:hover {
+  transform: translatex(110px);
+}
+
+.social ul li.twitter:hover {
+  /* background-color: #55acee; */
+  backdrop-filter: blur(10px);
+}
+
+.social ul li.facebook:hover {
+  /* background-color: #3b5999; */
+  backdrop-filter: blur(10px);
+}
+
+.social ul li.google-plus:hover {
+  /* background-color: #dd4b39; */
+  backdrop-filter: blur(10px);
+}
+
+.social ul li.instagram:hover {
+  /* background-color: #e4405f; */
+  backdrop-filter: blur(10px);
+}
+
+.social ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.social ul li i {
+  text-align: center;
+  margin-left: 14px;
+  color: black;
+  background-color: white;
+  padding: 5px;
+  border-radius: 70%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  transform: rotate(0deg);
+}
+
+.social ul li:hover i {
+  transform: rotate(360deg);
+  transition: all 1s;
+}
 
 
 @keyframes shake {
