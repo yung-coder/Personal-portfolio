@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  background-color: #010717;
+}
 
 * {
   margin: 0;
@@ -57,9 +60,8 @@
   position: absolute;
   top:0;
   width: 40%;
-  height: 40%;
+  height: 25%;
   margin-top: 30%;
-  border: 2px solid red;
 }
 .social {
   position: fixed;

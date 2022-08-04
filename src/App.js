@@ -46,9 +46,7 @@ function App() {
           </div>
       </div>
       </Router>
-   
-      <Socials/> /// to work on
-      
+      <Socials/> 
     </div>
     </>
   );
