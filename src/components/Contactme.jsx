@@ -1,26 +1,34 @@
 import React from "react";
-import pin from './pin.png';
-import email from './email.png';
+import pin from "./location.png";
+import email from "./email.png";
 const Contactme = () => {
   return (
-    <div className="border w-[350px] h-[40rem] mt-[400px] flex justify-center items-center flex-col space-y-20 ">
-      <div className="border border-red-700 w-full h-14 flex space-x-6   items-center bg-red-800 rounded-3xl">
+    <div className=" w-full h-full mt-72 flex justify-center items-center flex-col space-y-20 ">
+      <div className=" backdrop-hue-rotate-180 w-[320px] h-14 flex space-x-6   items-center  rounded-3xl backdrop-blur-3xl shadow-xl shadow-black">
         <h1></h1>
-        <img src={pin} alt="pin"  className="h-7 w-7"/>
-        <p className="text-sm">Palmpur</p>
-        <button className="text-sm">Copy</button>
+        <h1></h1>
+        <img src={pin} alt="pin" className="h-7 w-7 " />
+        <p className="text-xs">Himanchal Pardesh,Palmpur</p>
       </div>
-      <div className="border border-red-700 w-full h-14 flex space-x-6   items-center bg-red-800 rounded-3xl">
+      <div className=" w-[320px] h-14 flex space-x-6   items-center backdrop-hue-rotate-180 backdrop-blur-3xl  rounded-3xl shadow-xl shadow-black">
         <h1></h1>
-        <i class="Phone is-animating "></i>
-        <p className="text-sm">7807717169</p>
-        <button className="text-sm">Copy</button>
+        <h1></h1>
+        <a href="tel:7807717169" className="text-sm ">
+          <button>
+            {" "}
+            <i class="Phone is-animating "></i>
+          </button>
+        </a>
+
+        <p className="text-sm ">+91 7807717169</p>
       </div>
-      <div className="border border-red-700 w-full h-14 flex space-x-6   items-center bg-red-800 rounded-3xl">
+      <div className=" w-[320px] h-14 flex space-x-6   items-center backdrop-hue-rotate-180 backdrop-blur-3xl  rounded-3xl shadow-xl shadow-black">
         <h1></h1>
-        <img src={email} alt="email" className="h-7 w-7"/>
+        <h1></h1>
+        <a class="button" href="mailto:chandel.sanjeev5@gmail.com" className="">
+          <img src={email} alt="email" className="h-7 w-7 animate-bounce" />
+        </a>
         <p className="text-sm">chandel.sanjeev5@gmail.com</p>
-        <button className="text-sm">Copy</button>
       </div>
     </div>
   );
