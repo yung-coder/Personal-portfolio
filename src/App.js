@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     <div className="App">
-      <Videobackground/>
+      {/* <Videobackground/> */}
       <Router>
       <div className='Navbar'>
         <Navbar/>

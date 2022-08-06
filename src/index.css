@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-body{
+body {
   background-color: #010717;
 }
 
@@ -22,10 +20,10 @@ body{
   height: 100vh;
   overflow: hidden;
 }
-.content{
+.content {
   display: flex;
   position: absolute;
-  top:0;
+  top: 0;
   width: 100%;
   height: 100%;
   margin-top: 60px;
@@ -38,7 +36,7 @@ body{
 }
 .name {
   position: relative;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 30px;
   font-weight: 700;
   color: #fff;
@@ -50,17 +48,17 @@ body{
   filter: blur(0.007em);
   animation: shake 2.5s linear forwards;
 }
-.Navbar{
+.Navbar {
   display: flex;
   position: absolute;
-  top:0;
+  top: 0;
   width: 100%;
 }
 
-.social{
+.social {
   display: flex;
   position: absolute;
-  top:0;
+  top: 0;
   width: 40%;
   height: 25%;
   margin-top: 30%;
@@ -134,55 +132,70 @@ body{
   transition: all 1s;
 }
 
-
 @keyframes shake {
-  5%, 15%, 25%, 35%, 55%, 65%, 75%, 95% {
-      filter: blur(0.018em);
-      transform: translateY(0.018em) rotate(0deg);
+  5%,
+  15%,
+  25%,
+  35%,
+  55%,
+  65%,
+  75%,
+  95% {
+    filter: blur(0.018em);
+    transform: translateY(0.018em) rotate(0deg);
   }
 
-  10%, 30%, 40%, 50%, 70%, 80%, 90% {
-      filter: blur(0.01em);
-      transform: translateY(-0.018em) rotate(0deg);
+  10%,
+  30%,
+  40%,
+  50%,
+  70%,
+  80%,
+  90% {
+    filter: blur(0.01em);
+    transform: translateY(-0.018em) rotate(0deg);
   }
 
-  20%, 60% {
-      filter: blur(0.03em);
-      transform: translate(-0.018em, 0.018em) rotate(0deg);
+  20%,
+  60% {
+    filter: blur(0.03em);
+    transform: translate(-0.018em, 0.018em) rotate(0deg);
   }
 
-  45%, 85% {
-      filter: blur(0.03em);
-      transform: translate(0.018em, -0.018em) rotate(0deg);
+  45%,
+  85% {
+    filter: blur(0.03em);
+    transform: translate(0.018em, -0.018em) rotate(0deg);
   }
 
   100% {
-      filter: blur(0.007em);
-      transform: translate(0) rotate(-0.5deg);
+    filter: blur(0.007em);
+    transform: translate(0) rotate(-0.5deg);
   }
 }
 
 @keyframes crack1 {
-  0%, 95% {
-      transform: translate(-50%, -50%);
+  0%,
+  95% {
+    transform: translate(-50%, -50%);
   }
 
   100% {
-      transform: translate(-51%, -48%);
+    transform: translate(-51%, -48%);
   }
 }
 
 @keyframes crack2 {
-  0%, 95% {
-      transform: translate(-50%, -50%);
+  0%,
+  95% {
+    transform: translate(-50%, -50%);
   }
 
   100% {
-      transform: translate(-49%, -53%);
+    transform: translate(-49%, -53%);
   }
 }
-@media (max-width:764px){
-  
+@media (max-width: 764px) {
 }
 
 .Phone {
@@ -194,9 +207,7 @@ body{
   font-size: 25vmin;
   background-color: #3498db;
   border-radius: 0.5em;
-  box-shadow:
-    0 0 0 0em rgba(#3498db, 0),
-    0em 0.05em 0.1em rgba(#000000, 0.2);
+  box-shadow: 0 0 0 0em rgba(#3498db, 0), 0em 0.05em 0.1em rgba(#000000, 0.2);
   transform: translate3d(0, 0, 0) scale(1);
 }
 
@@ -231,11 +242,11 @@ body{
 
 .Phone.is-animating {
   animation: phone-outer 3000ms infinite;
-  
+
   &::before {
     animation: phone-inner 3000ms infinite;
   }
-  
+
   &::after {
     animation: phone-icon 3000ms infinite;
   }
@@ -244,27 +255,21 @@ body{
 @keyframes phone-outer {
   0% {
     transform: translate3d(0, 0, 0) scale(1);
-    box-shadow:
-      0 0 0 0em rgba(#3498db, 0),
-      0em 0.05em 0.1em rgba(#000000, 0.2);
+    box-shadow: 0 0 0 0em rgba(#3498db, 0), 0em 0.05em 0.1em rgba(#000000, 0.2);
   }
   33.3333% {
     transform: translate3d(0, 0, 0) scale(1.1);
-    box-shadow:
-      0 0 0 0em rgba(#3498db, 0.1),
+    box-shadow: 0 0 0 0em rgba(#3498db, 0.1),
       0em 0.05em 0.1em rgba(#000000, 0.5);
   }
   66.6666% {
     transform: translate3d(0, 0, 0) scale(1);
-    box-shadow:
-      0 0 0 0.5em rgba(#3498db, 0),
+    box-shadow: 0 0 0 0.5em rgba(#3498db, 0),
       0em 0.05em 0.1em rgba(#000000, 0.2);
   }
   100% {
     transform: translate3d(0, 0, 0) scale(1);
-    box-shadow:
-      0 0 0 0em rgba(#3498db, 0),
-      0em 0.05em 0.1em rgba(#000000, 0.2);
+    box-shadow: 0 0 0 0em rgba(#3498db, 0), 0em 0.05em 0.1em rgba(#000000, 0.2);
   }
 }
 
@@ -288,43 +293,95 @@ body{
 }
 
 @keyframes phone-icon {
-  0% { transform: translate3d(0em, 0, 0); }
-  2% { transform: translate3d(0.01em, 0, 0); }
-  4% { transform: translate3d(-0.01em, 0, 0); }
-  6% { transform: translate3d(0.01em, 0, 0); }
-  8% { transform: translate3d(-0.01em, 0, 0); }
-  10% { transform: translate3d(0.01em, 0, 0); }
-  12% { transform: translate3d(-0.01em, 0, 0); }
-  14% { transform: translate3d(0.01em, 0, 0); }
-  16% { transform: translate3d(-0.01em, 0, 0); }
-  18% { transform: translate3d(0.01em, 0, 0); }
-  20% { transform: translate3d(-0.01em, 0, 0); }
-  22% { transform: translate3d(0.01em, 0, 0); }
-  24% { transform: translate3d(-0.01em, 0, 0); }
-  26% { transform: translate3d(0.01em, 0, 0); }
-  28% { transform: translate3d(-0.01em, 0, 0); }
-  30% { transform: translate3d(0.01em, 0, 0); }
-  32% { transform: translate3d(-0.01em, 0, 0); }
-  34% { transform: translate3d(0.01em, 0, 0); }
-  36% { transform: translate3d(-0.01em, 0, 0); }
-  38% { transform: translate3d(0.01em, 0, 0); }
-  40% { transform: translate3d(-0.01em, 0, 0); }
-  42% { transform: translate3d(0.01em, 0, 0); }
-  44% { transform: translate3d(-0.01em, 0, 0); }
-  46% { transform: translate3d(0em, 0, 0); }
+  0% {
+    transform: translate3d(0em, 0, 0);
+  }
+  2% {
+    transform: translate3d(0.01em, 0, 0);
+  }
+  4% {
+    transform: translate3d(-0.01em, 0, 0);
+  }
+  6% {
+    transform: translate3d(0.01em, 0, 0);
+  }
+  8% {
+    transform: translate3d(-0.01em, 0, 0);
+  }
+  10% {
+    transform: translate3d(0.01em, 0, 0);
+  }
+  12% {
+    transform: translate3d(-0.01em, 0, 0);
+  }
+  14% {
+    transform: translate3d(0.01em, 0, 0);
+  }
+  16% {
+    transform: translate3d(-0.01em, 0, 0);
+  }
+  18% {
+    transform: translate3d(0.01em, 0, 0);
+  }
+  20% {
+    transform: translate3d(-0.01em, 0, 0);
+  }
+  22% {
+    transform: translate3d(0.01em, 0, 0);
+  }
+  24% {
+    transform: translate3d(-0.01em, 0, 0);
+  }
+  26% {
+    transform: translate3d(0.01em, 0, 0);
+  }
+  28% {
+    transform: translate3d(-0.01em, 0, 0);
+  }
+  30% {
+    transform: translate3d(0.01em, 0, 0);
+  }
+  32% {
+    transform: translate3d(-0.01em, 0, 0);
+  }
+  34% {
+    transform: translate3d(0.01em, 0, 0);
+  }
+  36% {
+    transform: translate3d(-0.01em, 0, 0);
+  }
+  38% {
+    transform: translate3d(0.01em, 0, 0);
+  }
+  40% {
+    transform: translate3d(-0.01em, 0, 0);
+  }
+  42% {
+    transform: translate3d(0.01em, 0, 0);
+  }
+  44% {
+    transform: translate3d(-0.01em, 0, 0);
+  }
+  46% {
+    transform: translate3d(0em, 0, 0);
+  }
 }
 
 .btn-contact {
   align-items: center;
   appearance: none;
-  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
   border: 0;
   border-radius: 10px;
   box-sizing: border-box;
   color: white;
   cursor: pointer;
   display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
+  font-family: "JetBrains Mono", monospace;
   height: 30px;
   width: 50px;
   justify-content: center;
@@ -336,25 +393,51 @@ body{
   position: relative;
   text-align: left;
   text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
+  transition: box-shadow 0.15s, transform 0.15s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  will-change: box-shadow,transform;
+  will-change: box-shadow, transform;
   font-size: 18px;
 }
 
 .btn-contact:focus {
-  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
 }
 
 .btn-contact:hover {
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
 .btn-contact:active {
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
+}
+.effect{
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer
+}
+.effect span{
+  transition: .5s linear
+}
+.effect:hover span:nth-child(1){
+  margin-right: 5px
+}
+.effect:hover span:nth-child(1):after{
+  content: "'";
+}
+.effect:hover span:nth-child(2){
+  margin-left: 30px
+}
+.effect:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
 }
