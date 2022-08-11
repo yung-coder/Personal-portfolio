@@ -1,9 +1,11 @@
 import { faCss3, faFigma, faHtml5, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faGift } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Loader from 'react-loaders';
 import './index.scss';
 const About = () => {
     return (
+        <>
         <div className='container about-page'>
           <div className='text-zone'>
             <h1>
@@ -36,6 +38,8 @@ const About = () => {
             </div>
           </div>
         </div>
+        <Loader type='pacman'/>
+        </>
     )
 }
 
