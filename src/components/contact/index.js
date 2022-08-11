@@ -2,32 +2,32 @@ import { EmailJSResponseStatus } from "@emailjs/browser";
 import { Input } from "postcss";
 import { useRef } from "react";
 import Loader from "react-loaders";
-import emailjs from '@emailjs/browser'
+import emailjs from "@emailjs/browser";
 import "./index.scss";
-
+import { MapContainer, TileLayer, useMap ,Popup ,Marker , Map } from "react-leaflet";
 const Contact = () => {
   const refForm = useRef();
 
-  const sendEmail =(e) =>{
-     e.preventDefault()
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-     emailjs
-       .sendForm(
-          'service_ed7a0i9',
-          'template_3krgw0t',
-          refForm.current,
-          'mW7tMDSy2F8rUY1Ig'
-       )
-       .then(
-         () => {
-           alert('Message send!');
-           window.location.reload(false)
-         },
-         ()=>{
-           alert('Failed to send');
-         }
-       )
-  }
+    emailjs
+      .sendForm(
+        "service_ed7a0i9",
+        "template_3krgw0t",
+        refForm.current,
+        "mW7tMDSy2F8rUY1Ig"
+      )
+      .then(
+        () => {
+          alert("Message send!");
+          window.location.reload(false);
+        },
+        () => {
+          alert("Failed to send");
+        }
+      );
+  };
   return (
     <>
       <div contanier contact-page>
@@ -38,36 +38,67 @@ const Contact = () => {
             consequuntur aperiam quas assumenda incidunt debitis esse id?
             Voluptatum incidunt harum maiores. Architecto, illo.
           </p>
-        <div className="contact-form">
-          <form ref={refForm} onSubmit={sendEmail}>
-            <ul>
-              <li className="half">
-                <input type="text" name="name" placeholder="Name" required />
-              </li>
-              <li className="half">
-                <input type="email" name="email" placeholder="email" required />
-              </li>
-              <li>
-                <input
-                  placeholder="Subject"
-                  type="text"
-                  name="subject"
-                  required
-                />
-              </li>
-              <li>
-                <textarea
-                  placeholder="Messgaes"
-                  name="message"
-                  required
-                ></textarea>
-              </li>
-              <li>
-                <input type="submit" className="flat-button" value="SEND" />
-              </li>
-            </ul>
-          </form>
+          <div className="contact-form">
+            <form ref={refForm} onSubmit={sendEmail}>
+              <ul>
+                <li className="half">
+                  <input type="text" name="name" placeholder="Name" required />
+                </li>
+                <li className="half">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="email"
+                    required
+                  />
+                </li>
+                <li>
+                  <input
+                    placeholder="Subject"
+                    type="text"
+                    name="subject"
+                    required
+                  />
+                </li>
+                <li>
+                  <textarea
+                    placeholder="Messgaes"
+                    name="message"
+                    required
+                  ></textarea>
+                </li>
+                <li>
+                  <input type="submit" className="flat-button" value="SEND" />
+                </li>
+              </ul>
+            </form>
+          </div>
         </div>
+        <div className="info-map">
+          Saksham Chandel
+          <br />
+          India
+          <br />
+          dfjkljksdjkfjds <br />
+          fdfsdfsdfdsf <br />
+          <span>fdhfhhfkjsdhfkjsdf</span>
+        </div>
+        <div className="map-container">
+          <div className="map">
+          <MapContainer
+            center={[51.505, -0.09]}
+          >
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={[51.505, -0.09]}>
+              <Popup>
+                A pretty CSS3 popup
+              </Popup>
+            </Marker>
+          </MapContainer>
+          </div>
         </div>
       </div>
       <Loader type="pacman" />
