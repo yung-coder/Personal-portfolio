@@ -3,6 +3,7 @@ import "./App.scss";
 import Layout from './components/Layout';
 import Home from './components/Home';
 import Sidebar from "./components/Sidebar/Sidebar";
+import About from "./components/About";
 function App() {
   return (
     <>
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         {/* <Route path="/" element={<Layout/>}></Route> */}
         <Route index element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
       </Routes>
       </div>
     </>
