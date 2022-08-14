@@ -4,7 +4,14 @@ import { useRef } from "react";
 import Loader from "react-loaders";
 import emailjs from "@emailjs/browser";
 import "./index.scss";
-import { MapContainer, TileLayer, useMap ,Popup ,Marker , Map } from "react-leaflet";
+import {
+  MapContainer,
+  TileLayer,
+  useMap,
+  Popup,
+  Marker,
+  Map,
+} from "react-leaflet";
 const Contact = () => {
   const refForm = useRef();
 
@@ -72,32 +79,12 @@ const Contact = () => {
                 </li>
               </ul>
             </form>
-          </div>
-        </div>
-        <div className="info-map">
-          Saksham Chandel
-          <br />
-          India
-          <br />
-          dfjkljksdjkfjds <br />
-          fdfsdfsdfdsf <br />
-          <span>fdhfhhfkjsdhfkjsdf</span>
-        </div>
-        <div className="map-container">
-          <div className="map">
-          <MapContainer
-            center={[51.505, -0.09]}
-          >
-            <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            <Marker position={[51.505, -0.09]}>
-              <Popup>
-                A pretty CSS3 popup
-              </Popup>
-            </Marker>
-          </MapContainer>
+            <div className="number">
+              +91 7807717169
+              <a href="tel:7807717169">
+              <button className="button-29 ">Call</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>

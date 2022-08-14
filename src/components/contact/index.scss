@@ -1,6 +1,6 @@
 .text-zone {
   position: absolute;
-  left: 10%;
+  left: 30%;
   top: 50%;
   transform: translateY(-50%);
   width: 35%;
@@ -69,7 +69,9 @@
 .contact-form {
   width: 100%;
   margin-top: 20px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   ul {
     padding: 0;
     margin: 0;
@@ -135,49 +137,64 @@
     border-radius: 4px;
   }
 }
+.number{
+  top: 70%;
+  margin-top: 34px;
+  width: 70%;
+  height: 70px;
+  display: flex;
+  color: #e8e54e;
+  font-size: 30px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #115173;
+  border-radius: 4px;
 
-.info-map{
-  position: absolute;
-  background-color: black;
-  top: 50px;
-  right: 30%;
-  z-index: 999999;
-  width: 267px;
-  padding: 20px;
-  color: #fff;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 17px;
-  font-weight: 300;
-  opacity: 0;
-  animation: fadeIn 1s 1.5s;
-  animation-fill-mode: forwards;
 
-  span{
-    font-size: 16px;
-    display: block;
-    padding-top: 20px;
-    color: #ffd700;
-  }
+
+/* CSS */
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-color: #ffff00;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 35px;
+  justify-content: center;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 14px;
+  margin-left: 35px;
 }
 
-
-
-// .leaflet-container{
-//   width: 100%;
-//   height: 100%;
-//   position: relative;
-//   opacity: 0;
-//   animation: backInright 1s 1.2s;
-//   animation-fill-mode: forwards;
-// }
-.map-container {
-  position: relative;
-  height: 180px;
-  width: 600px;
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
 }
 
-.map {
-  position: relative;
-  height: inherit;
-  width: inherit;
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
 }
