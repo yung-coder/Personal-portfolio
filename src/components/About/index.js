@@ -34,9 +34,17 @@ const About = () => {
         </p>
         <hr />
       </div>
-      <div className="skilldection">
-       
-     </div>
+        
+          <div class="skills-container">
+            <div class="circular-progress html"></div>
+            <div class="circular-progress css"></div>
+            <div class="circular-progress javascript"></div>
+            <div class="circular-progress php"></div>
+            <div class="circular-progress java"></div>
+            <div class="circular-progress react"></div>
+          </div>
+        
+      
       <Loader type="pacman" />
     </>
   );
