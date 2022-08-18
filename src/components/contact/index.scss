@@ -12,37 +12,37 @@
     font-size: 53px;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    color: #ffd700;
+    color: white;
     font-weight: 400;
     margin-top: 0;
     position: relative;
     margin-bottom: 40px;
     left: 10px;
 
-    &::before {
-      content: "<h1>";
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-      position: absolute;
-      margin-top: -10px;
-      font-size: 18px;
-      opacity: 0.6;
-      line-height: 18px;
-    }
+  //   &::before {
+  //     content: "<h1>";
+  //     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  //       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  //     position: absolute;
+  //     margin-top: -10px;
+  //     font-size: 18px;
+  //     opacity: 0.6;
+  //     line-height: 18px;
+  //   }
 
-    &::after {
-      content: "<h1/>";
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-      position: absolute;
-      left: -30px;
-      bottom: -20px;
-      font-size: 18px;
-      opacity: 0.6;
-      line-height: 18px;
-      margin-left: 20px;
-    }
-  }
+  //   &::after {
+  //     content: "<h1/>";
+  //     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  //       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  //     position: absolute;
+  //     left: -30px;
+  //     bottom: -20px;
+  //     font-size: 18px;
+  //     opacity: 0.6;
+  //     line-height: 18px;
+  //     margin-left: 20px;
+  //   }
+  // }
 
   p {
     font-size: 13px;
@@ -64,6 +64,7 @@
       animation-delay: 1.3s;
     }
   }
+}
 }
 
 .contact-form {

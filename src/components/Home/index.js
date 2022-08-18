@@ -1,28 +1,33 @@
-import Loader from 'react-loaders'
-import { Link } from 'react-router-dom'
-import LogoTitle from '../../assets/images/logo-s.png'
-import './index.scss'
-import Logo from './logo'
-const Home =()=>{
-
-    return(
-        <>
-        <div className="contanier home-page">
-            <div className="text-zone">
-                <h1>Hi , <br /> I'm
-                <img src={LogoTitle} alt="developer" />
-                aksham
-                <br />
-                web developer
-                </h1>
-                <h2>Frontend developer / Javascript </h2>
-                <Link to='/contact' className='flag-button'>CONTACT ME</Link>
+import Loader from "react-loaders";
+import { Link } from "react-router-dom";
+import LogoTitle from "../../assets/images/logo-s.png";
+import "./index.scss";
+import Logo from "./logo";
+const Home = () => {
+  return (
+    <>
+      <div className="contanier home-page">
+        <div className="text-zone">
+          <section>
+            <div class="content">
+              <h2>Saksham</h2>
+              <h2>Saksham</h2>
             </div>
-            <Logo />
+          </section>
+          <section>
+            <div class="content2">
+              <h2>Chandel</h2>
+              <h2>Chandel</h2>
+            </div>
+          </section>
+        <h2 className="desc">Javascript / Front-end / React / Nextjs </h2>
+        <Link to="/contact" className="flag-button">CONTACT ME</Link>
         </div>
-        <Loader type='pacman'/>
-        </>
-    )
-}
+      </div>
+      <Logo />
+      <Loader type="pacman" />
+    </>
+  );
+};
 
-export default Home
+export default Home;
