@@ -37,13 +37,11 @@ const Contact = () => {
   };
   return (
     <>
-      <div contanier contact-page>
+     
         <div className="text-zone">
           <h1>Contact me</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia amet
-            consequuntur aperiam quas assumenda incidunt debitis esse id?
-            Voluptatum incidunt harum maiores. Architecto, illo.
+            Let's connect 👋
           </p>
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
@@ -82,12 +80,11 @@ const Contact = () => {
             <div className="number">
               +91 7807717169
               <a href="tel:7807717169">
-              <button className="button-29 ">Call</button>
+              <button className="button-29">📞</button>
               </a>
             </div>
           </div>
         </div>
-      </div>
       <Loader type="pacman" />
     </>
   );
