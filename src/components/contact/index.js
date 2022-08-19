@@ -39,7 +39,7 @@ const Contact = () => {
     <>
      
         <div className="text-zone">
-          <h1>Contact me</h1>
+          <h1 className="texth1cont">Contact me</h1>
           <p>
             Let's connect 👋
           </p>

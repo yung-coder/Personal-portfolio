@@ -34,7 +34,7 @@ const About = () => {
         </p>
         <hr />
       </div>
-      <h1>Skills</h1>
+      <h1 className="midhead">Skills</h1>
       <div className="skill-section">
         <div class="skills">
           <div class="skill" id="html">
