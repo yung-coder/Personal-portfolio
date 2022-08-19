@@ -34,17 +34,67 @@ const About = () => {
         </p>
         <hr />
       </div>
-        
-          <div class="skills-container">
-            <div class="circular-progress html"></div>
-            <div class="circular-progress css"></div>
-            <div class="circular-progress javascript"></div>
-            <div class="circular-progress php"></div>
-            <div class="circular-progress java"></div>
-            <div class="circular-progress react"></div>
+      <h1>Skills</h1>
+      <div className="skill-section">
+        <div class="skills">
+          <div class="skill" id="html">
+            <span class="title-html">HTML</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
           </div>
-        
-      
+
+          <div class="skill" id="css">
+            <span className="title-css">CSS</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+
+          <div class="skill" id="js">
+            <span class="title-js">JS</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+          <div class="skill" id="react">
+            <span class="title-react">Reactjs</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+          <div class="skill" id="next">
+            <span class="title-Nextjs">Nextjs</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+          <div class="skill" id="C">
+            <span class="title-C">C++/C</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+          <div class="skill" id="Node">
+            <span class="title-Nodejs">Nodejs</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+          <div class="skill" id="Docker">
+            <span class="title-docker">Docker</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+          <div class="skill" id="figma">
+            <span class="title-docker">Figma</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
       <Loader type="pacman" />
     </>
   );

@@ -21,7 +21,8 @@ body{
     margin-top: 0;
     position: relative;
     margin-bottom: 40px;
-    right: 170px;
+    right: 10px;
+    letter-spacing: 12px;
   }
   p{
     font-size: 15px;
@@ -30,7 +31,6 @@ body{
     font-weight: 300;
     min-width: min-content;
     animation: pulse 1s;
-
     &:nth-of-type(1) {
         animation-delay: 1.1s;
     }
@@ -44,129 +44,372 @@ body{
     }
   }
 }
-.skilldection{
-  position: absolute;
-  top: 50%;
-  width: 90%;
-  height: 50%;
-  vertical-align: middle;
-  display: table-cell;
-  max-height: 90%;
-  backdrop-filter: sepia(10px);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  overflow-x: scroll;
-  align-items: center;
-  overflow-y: hidden;
-  background-color: #111;
-}
-h1 {
-  text-align: center;
-  color: #eee;
-}
 
-.skills-container {
-  display: flex;
-  overflow: hidden;
-  flex-wrap: nowrap;
-  position: absolute;
-  height: 120px;
-  width: fit-content;
+.skills {
+  // padding: 10px;
   // border: 2px solid red;
-  position: absolute;
+  width: 500px;
+  position:absolute;
   top: 50%;
-  width: 90%;
-  left: 5%;
-  padding: 24px 34px;
-  // vertical-align: middle; 
+  width: 40%;
+  height: fit-content;
+  left: 10%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  overflow-x: scroll;
-  align-items: center;
-  overflow-y: hidden;
-  background-color: #111;
-  white-space: nowrap;
-  margin-top: 16%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  color: white;
+  font-size: large;
+  letter-spacing: 5px;
+  // align-items: center;
 }
 
-.circular-progress {
-  &,
-  &:before,
-  &:after{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-  }
-  margin: auto;
+.skill {
+  width: 100%;
+  margin: 5px 0;
+}
 
+.title {
+  color: #fff;
+  font-weight: 700;
+}
+
+.progress-bar {
+  background: #404040;
+  border-radius: 3px;
+  width: 40%;
+  height: 15px;
+  margin-top: 5px;
+/*   overflow: hidden; */
+}
+
+
+
+#html .progress {
+  max-width: 80%;
+  height: 100%;
+  background: #ed2828;
+  border-radius: 3px;
   position: relative;
-  &:before,
-  &:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  &:before {
-    padding: 0.5em;
-    line-height: 140px;
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  &:after {
-    font-size: .8rem;
-    font-weight: normal;
-    text-transform: uppercase;
-    line-height: 230px;
-  }
+  animation: 1s ease 0s 1 loadBars; 
 }
 
-@function progress($percent){
-  $deg: $percent/100 * 180;
-  @return #{$deg}deg;
+#html .progress::after {
+  content: "80%";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: rgb(255, 253, 253);
+  color: #000000;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
 }
 
-@mixin circular-progress($percent,$skill,$color,$bgcolor){
-
-  $progress: progress($percent);
-  background: linear-gradient(0deg, $color 50%, rgba($color,.3) 50%);
-  transform: rotate($progress);
-  &:before,
-  &:after {
-    color: $color;
-  }
-  &:before {
-    background: $bgcolor content-box;
-    transform: rotate(-#{$progress});
-    content: "#{$percent}%";
-  }
-  &:after {
-    background: linear-gradient(transparent 50%, $bgcolor 50%);
-    content: "#{$skill}";
-    transform: rotate(-#{$progress}) scale(1.1);
-  }
+#html .progress::before {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  right: -5px;
+  top: -12px;  
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid rgb(255, 255, 255);
 }
 
-.html{
-  @include circular-progress(70,html5,#F1642C,#111);
+#css .progress {
+  max-width: 70%;
+  height: 100%;
+  background: #ed2828;
+  position: relative;
+  animation: 1s ease 0s 1 loadBars; 
 }
-.css{
-  @include circular-progress(60,css3,#25AFDE,#111);
+
+#css .progress::after {
+  content: "70%";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #fff;
+  color: #000000;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
 }
-.javascript{
-  @include circular-progress(90,javascript,yellow,#111);
+
+#css .progress::before {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  right: -5px;
+  top: -12px;  
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
 }
-.php{
-  @include circular-progress(84,php,#767BB3,#111);
+
+#js .progress {
+  max-width: 60%;
+  height: 100%;
+  background: #ed2828;
+  position: relative;
+  animation: 1s ease 0s 1 loadBars; 
 }
-.java{
-  @include circular-progress(84,java,#767BB3,#111);
+
+#js .progress::after {
+  content: "60%";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #fff;
+  color: #000000;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
 }
-.react{
-  @include circular-progress(84,react,#767BB3,#111);
+
+#js .progress::before {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  right: -5px;
+  top: -12px;  
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+#react .progress {
+  max-width: 70%;
+  height: 100%;
+  background: #ed2828;
+  position: relative;
+  animation: 1s ease 0s 1 loadBars; 
+}
+
+#react .progress::after {
+  content: "70%";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #fff;
+  color: #000000;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
+}
+
+#react .progress::before {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  right: -5px;
+  top: -12px;  
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+#next .progress {
+  max-width: 30%;
+  height: 100%;
+  background: #ed2828;
+  position: relative;
+  animation: 1s ease 0s 1 loadBars; 
+}
+
+#next .progress::after {
+  content: "30%";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #fff;
+  color: #000000;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
+}
+
+#next .progress::before {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  right: -5px;
+  top: -12px;  
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+#C .progress {
+  max-width: 80%;
+  height: 100%;
+  background: #ed2828;
+  position: relative;
+  animation: 1s ease 0s 1 loadBars; 
+}
+
+#C .progress::after {
+  content: "80%";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #fff;
+  color: #000000;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
+}
+
+#C .progress::before {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  right: -5px;
+  top: -12px;  
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+#Node .progress {
+  max-width: 50%;
+  height: 100%;
+  background: #ed2828;
+  position: relative;
+  animation: 1s ease 0s 1 loadBars; 
+}
+
+#Node .progress::after {
+  content: "50%";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #fff;
+  color: #000000;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
+}
+
+#Node .progress::before {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  right: -5px;
+  top: -12px;  
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+#Docker .progress {
+  max-width: 50%;
+  height: 100%;
+  background: #ed2828;
+  position: relative;
+  animation: 1s ease 0s 1 loadBars; 
+}
+
+#Docker .progress::after {
+  content: "50%";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #fff;
+  color: #000000;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
+}
+
+#Docker .progress::before {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  right: -5px;
+  top: -12px;  
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+#figma .progress {
+  max-width: 60%;
+  height: 100%;
+  background: #ed2828;
+  position: relative;
+  animation: 1s ease 0s 1 loadBars; 
+}
+
+#figma .progress::after {
+  content: "60%";
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  height: 15px;
+  width: 30px;
+  background: #fff;
+  color: #000000;
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 4px;
+  right: -18px;
+  top: -30px;
+}
+
+#figma .progress::before {
+  content: "";
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  right: -5px;
+  top: -12px;  
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+
+@keyframes loadBars{
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+  
 }
