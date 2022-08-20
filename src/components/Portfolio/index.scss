@@ -13,8 +13,8 @@
   overflow-x: scroll;
   overflow-y: hidden;
   max-width: 70%;
-  height: 60%;
-  top: 60px;
+  height: 40%;
+  top: 40px;
   padding: 13px 13px;
   // border: 2px solid green;
   // left: calc(50% - 300px);
@@ -24,6 +24,7 @@
   align-items: center;
   white-space: nowrap;
   margin-top: 5%;
+  // border: 2px solid green;
 }
 .container-portfolio::-webkit-scrollbar {
   width: 12px;
@@ -146,4 +147,44 @@ svg {
   text-align: center;
   // padding: 20px;
   color: white;
+}
+.introhead{
+  position: absolute;
+  top: 0%;
+  font-size: xx-large;
+  color: #ffd700;
+  letter-spacing: 10px;
+}
+.introhead2{
+  position: absolute;
+  top: 57%;
+  font-size: xx-large;
+  color: #ffd700;
+}
+.open-source-projects{
+  position: absolute;
+  top: 73%;
+  display: flex;
+  justify-content: center;
+}
+.reactplay{
+  height: 200px;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;;
+}
+.reactplay:hover{
+  box-shadow: blue 0px 10px 10px;
+}
+.reactplay img{
+  width: 300px;
+  height: 200px;
+}
+.inforeact{
+  color: white;
+  word-break: break-all;
+  font-size: medium;
+  background-color: #17141d;
+  padding: 12px 12px;
 }
