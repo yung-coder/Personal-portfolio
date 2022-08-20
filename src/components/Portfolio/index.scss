@@ -52,10 +52,14 @@
   word-break: break-word;
   left: 0px;
 }
+.card:hover{
+  box-shadow: -1rem 0 2rem blue;
+}
 .card h3{
-  margin-top: 80px;
+  margin-top: 45px;
   margin-left: 20px;
   color: white;
+  font-size: 25px;
 }
 .card:not(:first-child) {
   margin-left: -50px;
@@ -142,7 +146,7 @@ svg {
   display: table-cell;
   width: 5px;
   height: auto;
-  font-size: medium;
+  font-size: 17px;
   vertical-align: middle;
   text-align: center;
   // padding: 20px;
