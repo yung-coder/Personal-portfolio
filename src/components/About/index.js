@@ -14,23 +14,23 @@ const About = () => {
     <>
       <div className="aboutme">
         <h1>About me</h1>
+        <h2>Greetings!</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
-          expedita a quibusdam nulla veritatis similique enim accusantium autem
-          quae. Aspernatur illum voluptatem, non quisquam iste magnam illo
-          reprehenderit, adipisci in mollitia alias temporibus nisi!
+          Myself  Saksham Chandel and . I'm a currently a student in computer science as a major and a front end
+          developer and learning about software development with a passion for
+          Software development. 
         </p>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
-          harum eveniet, doloremque placeat est odit quas voluptatum quis vero
-          officia ex quos natus corrupti, facere repellendus in, praesentium
-          officiis et quo sed.
+          I am from india Himanchal pardesh Teh. palampur i got a intrest in software development from a long time and love to learn about new techlogies
         </p>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus,
-          voluptatem voluptatibus at vero labore minus excepturi cum repudiandae
-          eum tempora sit aperiam explicabo maiores eos doloribus aliquid modi
-          doloremque architecto.
+          Looking forward to work as a software developer 
+        </p>
+        <p>
+          Thanks 
+        </p>
+        <p>
+          Saksham Chandel
         </p>
         <hr />
       </div>
@@ -89,6 +89,12 @@ const About = () => {
           </div>
           <div class="skill" id="figma">
             <span class="title-docker">Figma</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+          <div class="skill" id="problem">
+            <span class="title-docker">Problem solving</span>
             <div class="progress-bar">
               <div class="progress"></div>
             </div>
