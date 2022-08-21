@@ -177,3 +177,59 @@
   background-color: #022c43;
   margin-top: 12px;
 }
+
+//responsives
+@media (max-width:764px){
+  .contanier{
+    width: 80%;
+    height: fit-content;
+    // border: 2px solid red;
+    top: 2%;
+    left: 18%;
+  }
+  .content{
+    margin-left: -45px;
+  }
+  .content2{
+    margin-left: -55px;
+    margin-top: 80px;
+  }
+  .content h2{
+    font-size: 40px;
+  }
+  .content2 h2{
+    font-size: 40px;
+  }
+  .home-page{
+
+    .text-zone{
+      left: 50%;
+    }
+    .flag-button{
+      margin-left: -140px;
+      width: fit-content;
+      letter-spacing: 2px;
+      width: 100px;
+      padding: 10px 10px;
+    }
+  }
+  .desc{
+    margin-left: -140px;
+    font-size: 11px;
+    word-break:  keep-all;
+    letter-spacing: 2px;
+    // border: 2px solid red;
+    width: 312px;
+  }
+  .quote{
+    background: transparent;
+    top: 80%;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    font-size: 7px;
+    left: 2%;
+    // word-break: break-all;
+    width: 240px;
+    // border: 2px solid red;
+  }
+}

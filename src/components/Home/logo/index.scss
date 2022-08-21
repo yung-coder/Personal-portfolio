@@ -32,6 +32,26 @@
   }
   
   .svg-container {
-    stroke: #ffd700;
+    stroke: none;
     stroke-width: 10;
   }
+@media (max-width: 764px){
+  .logo-container{
+    left: 50%;
+    visibility: hidden;
+
+    svg{
+      width: 400px;
+      height: 400px;
+    }
+
+    .solid-logo{
+      width: 10%;
+      left: 30%;
+      top: 13%;
+    }
+  }
+  .svg-container{
+    stroke: none;
+  }
+}
