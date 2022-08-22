@@ -4,16 +4,19 @@ import "./Sidebar.scss";
 import logoS from '../../assets/images/logo-s.png'
 import logoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase, faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faBriefcase, faClock, faClose, faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { useState } from 'react';
+import { click } from '@testing-library/user-event/dist/click';
 const Sidebar = () => {
+  const [shownav,setshownav] = useState(false);
   return (
        <div className="nav-bar">
         <Link className="logo" to="/">
           <img src={logoS} alt="logo" />
           <img src={logoSubtitle} alt="Slobodan" className="sub-logo" />
         </Link>
-        <nav>
+        <nav className={shownav ? 'mobile-show':''}>
           <NavLink exact="true" activeclassname="active" to="/">
             <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
           </NavLink>
@@ -26,6 +29,13 @@ const Sidebar = () => {
           <NavLink exact="true" activeclassname="active" className="portfolio-link" to="/portfolio">
             <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
           </NavLink>
+          <FontAwesomeIcon 
+            onClick={()=> setshownav(false)}
+            icon={faClose}
+            color="#ffd700"
+            size='3x'
+            className='close-icon'
+          />
         </nav>
         <ul>
           <li>
@@ -44,6 +54,13 @@ const Sidebar = () => {
             </a>
           </li>
         </ul>
+        <FontAwesomeIcon
+          onClick={()=>setshownav(true)}
+          icon={faBars}
+          color="#ffd700"
+          size='3x'
+          className='hamburger-icon'
+        />
       </div>
   )
 }
