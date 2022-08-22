@@ -472,3 +472,44 @@ body{
   }
   
 }
+@media screen and (max-width:1200px){
+  body{
+    overflow-y: visible;
+  }
+  .aboutme{
+    // border: 2px solid red;
+    width: 96%;
+    top: 50%;
+    left: 0;
+    padding: 5px 5px;
+
+    h1{
+      font-size: 25px;
+    }
+    h2{
+      font-size: 15px;
+    }
+    p{
+      margin-top: 27px;
+      font-size: 13px;
+    }
+  }
+  .skills{
+    // border: 2px solid red;
+    top: 95%;
+    left: 0;
+    padding: 10px 10px;
+    width: 90%;
+  }
+  .skill{
+    margin: 7px 0px;
+  }
+  .midhead{
+    top: 80%;
+    left: 0;
+    padding: 10px 10px;
+  }
+  .progress-bar{
+    width: 100%;
+  }
+}
