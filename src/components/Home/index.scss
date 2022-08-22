@@ -177,7 +177,9 @@
   background-color: #022c43;
   margin-top: 12px;
 }
-
+.visible{
+  display: block;
+}
 //responsives
 @media (max-width:764px){
   .contanier{
@@ -188,10 +190,11 @@
     left: 18%;
   }
   .content{
-    margin-left: -45px;
+    margin-left: -120px;
+    
   }
   .content2{
-    margin-left: -55px;
+    margin-left: -135px;
     margin-top: 80px;
   }
   .content h2{
@@ -206,7 +209,7 @@
       left: 50%;
     }
     .flag-button{
-      margin-left: -140px;
+      margin-left: -211px;
       width: fit-content;
       letter-spacing: 2px;
       width: 100px;
@@ -214,8 +217,8 @@
     }
   }
   .desc{
-    margin-left: -140px;
-    font-size: 11px;
+    margin-left: -210px;
+    font-size: 12px;
     word-break:  keep-all;
     letter-spacing: 2px;
     // border: 2px solid red;
@@ -227,9 +230,13 @@
     margin-top: 40px;
     letter-spacing: 2px;
     font-size: 7px;
-    left: 2%;
+    margin-left: -90px;
     // word-break: break-all;
     width: 240px;
     // border: 2px solid red;
+  }
+  .visible{
+    visibility: hidden;
+    display: none;
   }
 }

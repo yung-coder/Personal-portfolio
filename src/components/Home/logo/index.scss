@@ -37,21 +37,21 @@
   }
 @media (max-width: 764px){
   .logo-container{
-    left: 50%;
-    visibility: hidden;
 
     svg{
-      width: 400px;
-      height: 400px;
+      width: 20%;
+     
+      transform: rotateZ(10deg) !important;
     }
-
+    img{
+      // opacity: 0.2 !important;
+    }
     .solid-logo{
-      width: 10%;
-      left: 30%;
-      top: 13%;
+      width: 15%;
+      left: 80%;
+      top: 10%;
+      // opacity: -5;
+      transform: rotateZ(30deg) !important;
     }
-  }
-  .svg-container{
-    stroke: none;
   }
 }
