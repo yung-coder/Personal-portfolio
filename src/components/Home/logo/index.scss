@@ -44,14 +44,15 @@
       transform: rotateZ(10deg) !important;
     }
     img{
-      // opacity: 0.2 !important;
+      opacity: 0.1 !important;
     }
     .solid-logo{
-      width: 15%;
-      left: 80%;
+      width: 70%;
+      left: 30%;
       top: 10%;
       // opacity: -5;
-      transform: rotateZ(30deg) !important;
+      transform: rotateZ(10deg) !important;
+      // display: none;
     }
   }
 }
