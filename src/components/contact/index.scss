@@ -172,3 +172,62 @@
   color: white;
   opacity: 1; 
 }
+@media screen and (max-width:1200px) {
+  .text-zone{
+    top: 58%;
+    .texth1cont{
+      font-size: 25px;
+      margin-left: -140px;
+      // border: 2px solid red;
+    }
+    p{
+      font-size: 15px;
+      letter-spacing: 10px;
+      // border: 2px solid red;
+      width: 270px;
+      margin-left: -63px;
+    }
+  }
+  .contact-form{
+    // border: 2px solid red;
+    width:  300px;
+    margin-left: -70px;
+
+    ul{
+      padding: 0px 0px;
+
+
+      li{
+        padding: 5px 5px;
+      }
+
+      li.half {
+        width: 95%;
+        margin-left: 0%;
+        float: left;
+        clear: none;
+  
+        &:first-child{
+          margin-left: 0;
+        }
+      }
+    }
+    
+    .flat-button{
+      float: left;
+      width: fit-content;
+    }
+  }
+
+  .number{
+    width: 70%;
+    font-size: 15px;
+    height: 50px;
+
+    .button-29{
+      height: 20px;
+    }
+  }
+
+   
+}
