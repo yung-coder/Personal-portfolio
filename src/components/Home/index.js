@@ -2,10 +2,11 @@ import Loader from "react-loaders";
 import { Link } from "react-router-dom";
 import LogoTitle from "../../assets/images/logo-s.png";
 import "./index.scss";
-// import Logo from "./logo";
 import axios from 'axios';
 import { useState } from "react";
 import { useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 const Home = () => {
   const [phrase,setphrase]=useState([]);
   const fetch = () => {
@@ -49,6 +50,25 @@ const Home = () => {
               </div>
            );
           })}
+      <div className="social-mobile-view">
+      <ul>
+          <li>
+            <a target="blank_" rel='noreferrer' href='https://www.linkedin.com/in/saksham-chandel-yungcoder/'> 
+              <FontAwesomeIcon icon={faLinkedin} color="blue" />
+            </a>
+          </li>
+          <li>
+            <a target="blank_" rel='noreferrer' href='https://www.linkedin.com/in/saksham-chandel-yungcoder/'> 
+              <FontAwesomeIcon icon={faGithub} color="black" />
+            </a>
+          </li>
+          <li>
+            <a target="blank_" rel='noreferrer' href='https://www.linkedin.com/in/saksham-chandel-yungcoder/'> 
+              <FontAwesomeIcon icon={faTwitter} color="blue" />
+            </a>
+          </li>
+        </ul>
+      </div>
       </div>
       {/* <Logo /> */}
       <Loader type="pacman" />
