@@ -174,7 +174,6 @@
   left: 11%;
   letter-spacing: 7px;
   font-family: 'Open Sans', sans-serif;
-  background-color: #022c43;
   margin-top: 12px;
 }
 .visible{
@@ -238,5 +237,15 @@
   .visible{
     visibility: hidden;
     display: none;
+  }
+}
+@media (width: 1280px){
+  .quote{
+    margin-left: -50px;
+  }
+  .home-page{
+    .flag-button{
+      padding: 15px 15px;
+    }
   }
 }

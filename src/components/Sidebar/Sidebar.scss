@@ -1,6 +1,6 @@
 .nav-bar {
   background: #181818;
-  width: 60px;
+  width: 70px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -91,7 +91,7 @@
     a.portfolio-link{
       &::after{
         content: "PORTFOLIO";
-        font-size: small;
+        font-size: 9px;
       }
     }
 

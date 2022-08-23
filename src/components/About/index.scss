@@ -513,3 +513,26 @@ body{
     width: 100%;
   }
 }
+@media (width: 1280px){
+  .aboutme{
+    h1{
+      font-size: 25px;
+    }
+    h2{
+      font-size: 17px;
+    }
+    p{
+      font-size: 13px;
+    }
+  }
+  .midhead{
+    font-size: 20px;
+  }
+  .skills{
+    top: 43%;
+    padding: 2px 5px;
+  }
+  .skill{
+    margin: 0px 0px;
+  }
+}
