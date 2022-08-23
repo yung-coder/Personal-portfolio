@@ -1,68 +1,68 @@
-.logo-container {
-    z-index: 0;
-    width: 400px;
-    height: 609px;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 15%;
-    bottom: 0;
-    left: auto;
-    margin: auto;
+// .logo-container {
+//     z-index: 0;
+//     width: 400px;
+//     height: 609px;
+//     opacity: 0;
+//     position: absolute;
+//     top: 0;
+//     right: 15%;
+//     bottom: 0;
+//     left: auto;
+//     margin: auto;
   
-    svg {
-      width: 100%;
-      height: auto;
-      bottom: 0;
-      transform: rotateZ(30deg) !important;
-    }
+//     svg {
+//       width: 100%;
+//       height: auto;
+//       bottom: 0;
+//       transform: rotateZ(30deg) !important;
+//     }
   
-    .solid-logo {
-      position: absolute;
-      top: auto;
-      right: auto;
-      bottom: auto;
-      left: 0;
-      margin: auto;
-      width: 100%;
-      opacity: 0;
-      transform: rotateZ(30deg) !important;
-      z-index: 1;
-    }
-  }
+//     .solid-logo {
+//       position: absolute;
+//       top: auto;
+//       right: auto;
+//       bottom: auto;
+//       left: 0;
+//       margin: auto;
+//       width: 100%;
+//       opacity: 0;
+//       transform: rotateZ(30deg) !important;
+//       z-index: 1;
+//     }
+//   }
   
-  .svg-container {
-    stroke: none;
-    stroke-width: 10;
-  }
-@media (max-width: 1200px){
-  .logo-container{
+//   .svg-container {
+//     stroke: none;
+//     stroke-width: 10;
+//   }
+// @media (max-width: 1200px){
+//   .logo-container{
 
-    svg{
-      width: 20%;
+//     svg{
+//       width: 20%;
      
-      transform: rotateZ(10deg) !important;
-    }
-    img{
-      opacity: 0.1 !important;
-    }
-    .solid-logo{
-      width: 70%;
-      left: 30%;
-      top: 10%;
-      // opacity: -5;
-      transform: rotateZ(10deg) !important;
-      // display: none;
-    }
-  }
-}
-@media (width: 1280px){
-  .logo-container{
+//       transform: rotateZ(10deg) !important;
+//     }
+//     img{
+//       opacity: 0.1 !important;
+//     }
+//     .solid-logo{
+//       width: 70%;
+//       left: 30%;
+//       top: 10%;
+//       // opacity: -5;
+//       transform: rotateZ(10deg) !important;
+//       // display: none;
+//     }
+//   }
+// }
+// @media (width: 1280px){
+//   .logo-container{
 
-    .solid-logo{
-      width: 70%;
-      top: 20%;
-      left: 30%;
-    }
-  }
-}
+//     .solid-logo{
+//       width: 70%;
+//       top: 20%;
+//       left: 30%;
+//     }
+//   }
+// }
