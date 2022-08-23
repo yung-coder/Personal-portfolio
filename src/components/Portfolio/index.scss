@@ -217,3 +217,54 @@ svg {
   background-color: #17141d;
   padding: 12px 12px;
 }
+
+@media screen and (max-width:1200px){
+  .introhead{
+    font-size: 20px;
+  }
+  .container-portfolio{
+    // border: 2px solid red;
+    height: 40%;
+    width: 100%;
+    margin-top: 45px;
+  }
+  .holder{
+    left: 0;
+  }
+  .card{
+    height: 220px;
+    min-width: 220px;
+  }
+  .content-portfolio{
+    // border: 2px solid green;
+    font-size: 10px;
+  }
+  .circle{
+    margin-left: 20px;
+  }
+  .introhead2{
+    font-size: 20px;
+  }
+  .open-source-projects{
+    flex-direction: column;
+    top: 70%;
+    padding: 12px 12px;
+    left: 10%;
+    // border: 2px solid red;
+    width: 80%;
+  }
+  .reactplay{
+    flex-direction: column;
+    width: fit-content;
+    // border: 2px solid red;
+    height: fit-content;
+    width: 100%;
+  }
+  .reactplay img{
+    width: 100%;
+  }
+  .inforeact{
+    padding: 5px 2px;
+    width: 100%;
+  }
+}
