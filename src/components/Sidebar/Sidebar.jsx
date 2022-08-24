@@ -44,12 +44,12 @@ const Sidebar = () => {
             </a>
           </li>
           <li>
-            <a target="blank_" rel='noreferrer' href='https://www.linkedin.com/in/saksham-chandel-yungcoder/'> 
+            <a target="blank_" rel='noreferrer' href='https://github.com/yung-coder'> 
               <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
             </a>
           </li>
           <li>
-            <a target="blank_" rel='noreferrer' href='https://www.linkedin.com/in/saksham-chandel-yungcoder/'> 
+            <a target="blank_" rel='noreferrer' href='https://twitter.com/_yung_tweets_'> 
               <FontAwesomeIcon icon={faTwitter} color="#4d4d4e" />
             </a>
           </li>
