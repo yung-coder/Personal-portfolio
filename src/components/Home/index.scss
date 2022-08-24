@@ -201,24 +201,18 @@
     align-items: center;
     position: absolute;
     // border: 2px solid red;
-    width: 100%;
-    top: 110%;
-    margin-left: -50px;
+    width: 50%;
+    top: 72%;
+    margin-left: -90px;
     font-size: 15px;
   }
   .social-mobile-view ul{
     display: flex;
-    justify-content: center;
-    align-items: center;
     list-style: none;
   }
   .social-mobile-view li{
-    padding: 15px 15px;
+    padding: 10px 10px;
     cursor: pointer;
-  }
-  .git{
-    background-color: white;
-    border-radius: 90%;
   }
   .content2{
     margin-left: -125px;
@@ -277,25 +271,6 @@
     }
   }
   .social-mobile-view{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    border: 2px solid red;
-    width: fit-content;
-    top: 72%;
-    margin-left: -50px;
-    font-size: 15px;
-  }
-  .social-mobile-view ul{
-    display: flex;
-    list-style: none;
-  }
-  .social-mobile-view li{
-    padding: 10px 15px;
-    cursor: pointer;
-  }
-  .social-mobile-view{
     display: none;
   }
 }
@@ -326,21 +301,17 @@
     align-items: center;
     position: absolute;
     // border: 2px solid red;
-    width: 90%;
+    width: 95%;
     top: 90%;
     // margin-left: -50px;
-    font-size: 15px;
+    font-size: 20px;
   }
   .social-mobile-view ul{
     display: flex;
     list-style: none;
   }
-  .git{
-    background-color: white;
-    border-radius: 90%;
-  }
   .social-mobile-view li{
-    padding: 20px 20px;
+    padding: 10px 15px;
     cursor: pointer;
   }
 }
@@ -371,9 +342,9 @@
     align-items: center;
     position: absolute;
     // border: 2px solid red;
-    width: 90%;
+    width: 95%;
     top: 90%;
-    // margin-left: 20px;
+    // margin-left: -50px;
     font-size: 20px;
   }
   .social-mobile-view ul{
@@ -381,12 +352,8 @@
     list-style: none;
   }
   .social-mobile-view li{
-    padding: 20px 20px;
+    padding: 10px 15px;
     cursor: pointer;
-  }
-  .git{
-    background-color: white;
-    border-radius: 90%;
   }
 }
 @media (width:1024px){
@@ -411,9 +378,9 @@
     align-items: center;
     position: absolute;
     // border: 2px solid red;
-    width: 90%;
-    top: 91%;
-    // margin-left: 20px;
+    width: 95%;
+    top: 100%;
+    // margin-left: -50px;
     font-size: 20px;
   }
   .social-mobile-view ul{
@@ -421,16 +388,11 @@
     list-style: none;
   }
   .social-mobile-view li{
-    padding: 20px 20px;
+    padding: 10px 15px;
     cursor: pointer;
   }
-  .git{
-    background-color: white;
-    border-radius: 90%;
-  }
-  
 }
-@media (max-width:912px){
+@media (width: 912px){
   .content{
     margin-left: 80px;
   }
@@ -449,7 +411,7 @@
     }
   }
   .quote{
-    margin-left: -60px;
+    margin-left: -45px;
   }
   .social-mobile-view{
     display: flex;
@@ -457,9 +419,9 @@
     align-items: center;
     position: absolute;
     // border: 2px solid red;
-    width: 90%;
+    width: 95%;
     top: 90%;
-    // margin-left: 20px;
+    // margin-left: -50px;
     font-size: 20px;
   }
   .social-mobile-view ul{
@@ -467,34 +429,30 @@
     list-style: none;
   }
   .social-mobile-view li{
-    padding: 20px 20px;
+    padding: 10px 15px;
     cursor: pointer;
   }
-  .git{
-    background-color: white;
-    border-radius: 90%;
-  }
 }
-@media (max-width:540px){
+@media (width:540px){
   .content{
-    margin-left: -120px;
+    margin-left: -140px;
   }
   .content2{
-    margin-left: -130px;
+    margin-left: -150px;
   }
   .desc{
-    margin-left: -200px;
+    margin-left: -218px;
     width: 400px;
   }
   .home-page{
     .flag-button{
       padding: 18px 18px;
       font-size: 8px;
-      margin-left: -200px;
+      margin-left: -215px;
     }
   }
   .quote{
-    margin-left: -30px;
+    margin-left: -45px;
   }
   .social-mobile-view{
     display: flex;
@@ -502,9 +460,9 @@
     align-items: center;
     position: absolute;
     // border: 2px solid red;
-    width: 90%;
-    top: 120%;
-    // margin-left: 20px;
+    width: 95%;
+    top: 130%;
+    // margin-left: -50px;
     font-size: 20px;
   }
   .social-mobile-view ul{
@@ -512,11 +470,7 @@
     list-style: none;
   }
   .social-mobile-view li{
-    padding: 20px 20px;
+    padding: 10px 15px;
     cursor: pointer;
-  }
-  .git{
-    background-color: white;
-    border-radius: 90%;
   }
 }
