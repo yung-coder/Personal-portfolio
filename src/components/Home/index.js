@@ -54,17 +54,17 @@ const Home = () => {
       <ul>
           <li>
             <a target="blank_" rel='noreferrer' href='https://www.linkedin.com/in/saksham-chandel-yungcoder/'> 
-              <FontAwesomeIcon icon={faLinkedin} color="blue" />
+              <FontAwesomeIcon icon={faLinkedin} color="#0072b1" />
             </a>
           </li>
           <li>
             <a target="blank_" rel='noreferrer' href='https://github.com/yung-coder'> 
-              <FontAwesomeIcon icon={faGithub} color="black" className="git"/>
+              <FontAwesomeIcon icon={faGithub} color="#171515 " className="git"/>
             </a>
           </li>
           <li>
             <a target="blank_" rel='noreferrer' href='https://twitter.com/_yung_tweets_'> 
-              <FontAwesomeIcon icon={faTwitter} color="blue" />
+              <FontAwesomeIcon icon={faTwitter} color="#1DA1F2" />
             </a>
           </li>
         </ul>
