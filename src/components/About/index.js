@@ -1,13 +1,4 @@
-import {
-  faCss3,
-  faFigma,
-  faHtml5,
-  faJs,
-  faReact,
-} from "@fortawesome/free-brands-svg-icons";
-import { faGift } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Loader from "react-loaders";
+
 import "./index.scss";
 const About = () => {
   return (
@@ -36,67 +27,67 @@ const About = () => {
       </div>
       <h1 className="midhead">Skills</h1>
       <div className="skill-section">
-        <div class="skills">
-          <div class="skill" id="html">
-            <span class="title-html">HTML</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
+        <div className="skills">
+          <div className="skill" id="html">
+            <span className="title-html">HTML</span>
+            <div className="progress-bar">
+              <div className="progress"></div>
             </div>
           </div>
 
-          <div class="skill" id="css">
-            <span className="title-css">CSS</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
+          <div className="skill" id="css">
+            <span classNameName="title-css">CSS</span>
+            <div className="progress-bar">
+              <div className="progress"></div>
             </div>
           </div>
 
-          <div class="skill" id="js">
-            <span class="title-js">JS</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
+          <div className="skill" id="js">
+            <span className="title-js">JS</span>
+            <div className="progress-bar">
+              <div className="progress"></div>
             </div>
           </div>
-          <div class="skill" id="react">
-            <span class="title-react">Reactjs</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
+          <div className="skill" id="react">
+            <span className="title-react">Reactjs</span>
+            <div className="progress-bar">
+              <div className="progress"></div>
             </div>
           </div>
-          <div class="skill" id="next">
-            <span class="title-Nextjs">Nextjs</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
+          <div className="skill" id="next">
+            <span className="title-Nextjs">Nextjs</span>
+            <div className="progress-bar">
+              <div className="progress"></div>
             </div>
           </div>
-          <div class="skill" id="C">
-            <span class="title-C">C++/C</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
+          <div className="skill" id="C">
+            <span className="title-C">C++/C</span>
+            <div className="progress-bar">
+              <div className="progress"></div>
             </div>
           </div>
-          <div class="skill" id="Node">
-            <span class="title-Nodejs">Nodejs</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
+          <div className="skill" id="Node">
+            <span className="title-Nodejs">Nodejs</span>
+            <div className="progress-bar">
+              <div className="progress"></div>
             </div>
           </div>
-          <div class="skill" id="Docker">
-            <span class="title-docker">Docker</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
+          <div className="skill" id="Docker">
+            <span className="title-docker">Docker</span>
+            <div className="progress-bar">
+              <div className="progress"></div>
             </div>
           </div>
-          <div class="skill" id="figma">
-            <span class="title-docker">Figma</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
+          <div className="skill" id="figma">
+            <span className="title-docker">Figma</span>
+            <div className="progress-bar">
+              <div className="progress"></div>
             </div>
           </div>
-          <div class="skill" id="problem">
-            <span class="title-docker">Problem solving</span>
-            <div class="progress-bar">
-              <div class="progress"></div>
+          <div className="skill" id="problem">
+            <span className="title-docker">Problem solving</span>
+            <div className="progress-bar">
+              <div className="progress"></div>
             </div>
           </div>
         </div>

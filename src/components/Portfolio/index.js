@@ -8,17 +8,16 @@ const index = () => {
       <div className="introhead">
         <h1>Projects</h1>
       </div>
-      <div class="container-portfolio">
-        <div class="card">
+      <div className="container-portfolio">
+        <div className="card">
           <h3>E-Notes</h3>
-          <div class="bar">
+          <div className="bar">
             <div className="content-portfolio">
               A simple notes taking app using pure javascript...
             </div>
-            {/* <div class="emptybar"></div>
-            <div class="filledbar"></div> */}
+           
           </div>
-          <div class="circle">
+          <div className="circle">
             <a
               href="https://github.com/yung-coder/Notes-_Taking_website-E-Notes"
               alt="enotes"
@@ -29,14 +28,14 @@ const index = () => {
             </a>
           </div>
         </div>
-        <div class="card">
+        <div className="card">
           <h3>Form Validator</h3>
-          <div class="bar">
+          <div className="bar">
             <div className="content-portfolio">
               A from validator using pure javascript...
             </div>
           </div>
-          <div class="circle">
+          <div className="circle">
             <a
               href="https://github.com/yung-coder/Form_Validator"
               alt="enotes"
@@ -47,14 +46,14 @@ const index = () => {
             </a>
           </div>
         </div>
-        <div class="card">
+        <div className="card">
           <h3>Tic-Tac-Toe</h3>
-          <div class="bar">
+          <div className="bar">
             <div className="content-portfolio">
               A simple Tic Tac Toe game using javascript !
             </div>
           </div>
-          <div class="circle">
+          <div className="circle">
             <a
               href="https://github.com/yung-coder/Tic-Tac-Toe"
               alt="enotes"
@@ -65,14 +64,14 @@ const index = () => {
             </a>
           </div>
         </div>
-        <div class="card">
+        <div className="card">
           <h3>Postman_clone</h3>
-          <div class="bar">
+          <div className="bar">
             <div className="content-portfolio">
               Postman clone using fetch api in javascript...
             </div>
           </div>
-          <div class="circle">
+          <div className="circle">
             <a
               href="https://github.com/yung-coder/Postman_clone"
               alt="enotes"
@@ -83,14 +82,14 @@ const index = () => {
             </a>
           </div>
         </div>
-        <div class="card">
+        <div className="card">
           <h3>Drag-Drop-image-in-html-page</h3>
-          <div class="bar">
+          <div className="bar">
             <div className="content-portfolio">
               A Simple Darg Drop feature in html page using javascript...
             </div>
           </div>
-          <div class="circle">
+          <div className="circle">
             <a
               href="https://github.com/yung-coder/Drag_Drop-image-in-html-page"
               alt="enotes"
@@ -101,14 +100,14 @@ const index = () => {
             </a>
           </div>
         </div>
-        <div class="card">
+        <div className="card">
           <h3>News APP REACT</h3>
-          <div class="bar">
+          <div className="bar">
             <div className="content-portfolio">
               A News app build using reactjs and api's...
             </div>
           </div>
-          <div class="circle">
+          <div className="circle">
             <a
               href="https://github.com/yung-coder/News-app-react"
               alt="enotes"
@@ -119,14 +118,14 @@ const index = () => {
             </a>
           </div>
         </div>
-        <div class="card">
+        <div className="card">
           <h3>Notes on cloud</h3>
-          <div class="bar">
+          <div className="bar">
             <div className="content-portfolio">
               A full stack app for taking notes...
             </div>
           </div>
-          <div class="circle">
+          <div className="circle">
             <a
               href="https://github.com/yung-coder/Notes-on-cloud"
               alt="enotes"
@@ -137,14 +136,14 @@ const index = () => {
             </a>
           </div>
         </div>
-        <div class="card">
+        <div className="card">
           <h3>React Weather app</h3>
-          <div class="bar">
+          <div className="bar">
             <div className="content-portfolio">
               A react app for searching weather of a loaction ...
             </div>
           </div>
-          <div class="circle">
+          <div className="circle">
             <a
               href="https://github.com/yung-coder/React-weather-app"
               alt="enotes"
@@ -155,14 +154,14 @@ const index = () => {
             </a>
           </div>
         </div>
-        <div class="card">
+        <div className="card">
           <h3>Devs jokes</h3>
-          <div class="bar">
+          <div className="bar">
             <div className="content-portfolio">
               A react app for fetching some dev jokes ...
             </div>
           </div>
-          <div class="circle">
+          <div className="circle">
             <a
               href="https://github.com/yung-coder/Dev-jokes"
               alt="enotes"
@@ -173,14 +172,14 @@ const index = () => {
             </a>
           </div>
         </div>
-        <div class="card">
+        <div className="card">
           <h3>Video-call-app</h3>
-          <div class="bar">
+          <div className="bar">
             <div className="content-portfolio">
               A Realtime video chat app 🚀 💻
             </div>
           </div>
-          <div class="circle">
+          <div className="circle">
             <a
               href="https://github.com/yung-coder/Video-call-app-"
               alt="enotes"
@@ -191,14 +190,14 @@ const index = () => {
             </a>
           </div>
         </div>
-        <div class="card">
+        <div className="card">
           <h3>Searc-Engine-clone</h3>
-          <div class="bar">
+          <div className="bar">
             <div className="content-portfolio">
               A react app a clone of google search engine...
             </div>
           </div>
-          <div class="circle">
+          <div className="circle">
             <a
               href="https://github.com/yung-coder/Search-engine-clone"
               alt="enotes"
@@ -209,14 +208,14 @@ const index = () => {
             </a>
           </div>
         </div>
-        <div class="card">
+        <div className="card">
           <h3>Cryptocurrency tracker app</h3>
-          <div class="bar">
+          <div className="bar">
             <div className="content-portfolio">
               A react app for tracking crypto ....
             </div>
           </div>
-          <div class="circle">
+          <div className="circle">
             <a
               href="https://github.com/yung-coder/Crypto-app"
               alt="enotes"
@@ -227,14 +226,14 @@ const index = () => {
             </a>
           </div>
         </div>
-        <div class="card">
+        <div className="card">
           <h3>Code editor</h3>
-          <div class="bar">
+          <div className="bar">
             <div className="content-portfolio">
               A react app for editing html css and js ...
             </div>
           </div>
-          <div class="circle">
+          <div className="circle">
             <a
               href="https://github.com/yung-coder/Code-editor"
               alt="enotes"
@@ -245,14 +244,14 @@ const index = () => {
             </a>
           </div>
         </div>
-        <div class="card">
+        <div className="card">
           <h3>Pokemon app</h3>
-          <div class="bar">
+          <div className="bar">
             <div className="content-portfolio">
               A react app for fetching details of pokemons....
             </div>
           </div>
-          <div class="circle">
+          <div className="circle">
             <a
               href="https://github.com/yung-coder/Pokemon-app"
               alt="enotes"

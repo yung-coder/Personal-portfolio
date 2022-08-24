@@ -2,19 +2,17 @@ import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import "./Sidebar.scss";
 import logoS from '../../assets/images/logo-s.png'
-import logoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faBriefcase, faClock, faClose, faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faBriefcase,  faClose, faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { useState } from 'react';
-import { click } from '@testing-library/user-event/dist/click';
 const Sidebar = () => {
   const [shownav,setshownav] = useState(false);
   return (
        <div className="nav-bar">
         <Link className="logo" to="/">
           <img src={logoS} alt="logo" />
-          {/* <img src={logoSubtitle} alt="Saksham" className="sub-logo" /> */}
+         
         </Link>
         <nav className={shownav ? 'mobile-show':''}>
           <NavLink exact="true" activeclassname="active" to="/">

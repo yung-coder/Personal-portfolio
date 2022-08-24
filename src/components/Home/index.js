@@ -1,6 +1,6 @@
 import Loader from "react-loaders";
 import { Link } from "react-router-dom";
-import LogoTitle from "../../assets/images/logo-s.png";
+
 import "./index.scss";
 import axios from 'axios';
 import { useState } from "react";
@@ -27,13 +27,13 @@ const Home = () => {
       <div className="contanier home-page">
         <div className="text-zone">
           <section>
-            <div class="content">
+            <div className="content">
               <h2>Saksham</h2>
               <h2>Saksham</h2>
             </div>
           </section>
           <section>
-            <div class="content2">
+            <div className="content2">
               <h2>Chandel</h2>
               <h2>Chandel</h2>
             </div>

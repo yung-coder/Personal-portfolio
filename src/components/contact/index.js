@@ -1,19 +1,10 @@
-import { EmailJSResponseStatus } from "@emailjs/browser";
-import { Input } from "postcss";
+
 import { useRef } from "react";
-import Loader from "react-loaders";
+
 import emailjs from "@emailjs/browser";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  MapContainer,
-  TileLayer,
-  useMap,
-  Popup,
-  Marker,
-  Map,
-} from "react-leaflet";
-import { faPhone, faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
+import { faPhone} from "@fortawesome/free-solid-svg-icons";
 const Contact = () => {
   const refForm = useRef();
 
