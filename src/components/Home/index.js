@@ -59,7 +59,7 @@ const Home = () => {
           </li>
           <li>
             <a target="blank_" rel='noreferrer' href='https://www.linkedin.com/in/saksham-chandel-yungcoder/'> 
-              <FontAwesomeIcon icon={faGithub} color="black" />
+              <FontAwesomeIcon icon={faGithub} color="black" className="git"/>
             </a>
           </li>
           <li>
