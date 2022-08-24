@@ -15,7 +15,6 @@ const Home = () => {
         headers: { 'X-Api-Key': '9S5WbSVQ17Jd/+8TQyYFVg==Cv3B7HWvZ8WzH38l'},
       })
       .then((response) => {
-        console.log(response.data);
         setphrase(response.data);
       });
   };

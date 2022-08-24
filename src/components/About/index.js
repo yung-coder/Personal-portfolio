@@ -35,7 +35,7 @@ const About = () => {
           </div>
 
           <div className="skill" id="css">
-            <span classNameName="title-css">CSS</span>
+            <span className="title-css">CSS</span>
             <div className="progress-bar">
               <div className="progress"></div>
             </div>
