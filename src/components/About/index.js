@@ -7,12 +7,11 @@ const About = () => {
         <h1>About me</h1>
         <h2>Greetings!</h2>
         <p>
-          Myself  Saksham Chandel and . I'm a currently a student in computer science as a major and a front end
-          developer and learning about software development with a passion for
-          Software development. 
+          Myself  Saksham Chandel. I am currently a student in computer science as a major and a front end
+          developer and learning about software development with a passion for it
         </p>
         <p>
-          I am from india Himanchal pardesh Teh. palampur i got a intrest in software development from a long time and love to learn about new techlogies
+          I am from india Himanchal pardesh Teh. palampur i got a intrest in software development from a long time and i love to learn about new technologies
         </p>
         <p>
           Looking forward to work as a software developer 
