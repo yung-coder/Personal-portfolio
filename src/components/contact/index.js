@@ -4,6 +4,7 @@ import { useRef } from "react";
 import Loader from "react-loaders";
 import emailjs from "@emailjs/browser";
 import "./index.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   MapContainer,
   TileLayer,
@@ -12,6 +13,7 @@ import {
   Marker,
   Map,
 } from "react-leaflet";
+import { faPhone, faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
 const Contact = () => {
   const refForm = useRef();
 
@@ -80,12 +82,11 @@ const Contact = () => {
             <div className="number">
               +91 7807717169
               <a href="tel:7807717169">
-              <button className="button-29">📞</button>
+              <button className="button-29"><FontAwesomeIcon icon={faPhone}/></button>
               </a>
             </div>
           </div>
         </div>
-      <Loader type="pacman" />
     </>
   );
 };
