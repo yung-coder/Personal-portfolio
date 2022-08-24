@@ -38,7 +38,7 @@ const Home = () => {
               <h2>Chandel</h2>
             </div>
           </section>
-        <h2 className="desc">Javascript / Front-end / React / Nextjs </h2>
+        <h2 className="desc">Javascript / Front-end / Reactjs / Nextjs </h2>
         <Link to="/contact" className="flag-button">CONTACT ME</Link>
         
       </div>
