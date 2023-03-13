@@ -6,6 +6,15 @@ body{
     font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
     color: #444;
     background-color: #022c43;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    height: 1500px;
     overflow-x: hidden;
+}
+
+h1{
+    color: red;
+    letter-spacing: 5px;
 }

@@ -1,5 +1,12 @@
 $primary-color: #ffd700;
 
+
+
+.App h1{ 
+  color: black;
+  font-size: 45px;
+}
+
 @import "animate.css";
 @import '~loaders.css/src/animations/pacman.scss';
 
