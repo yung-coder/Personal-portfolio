@@ -1,5 +1,6 @@
 import React from "react";
 import { styles } from "../src/app/style";
+import ComputerCanvas from "./Model";
 
 const Hero = () => {
   return (
@@ -22,6 +23,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
+      <ComputerCanvas />
     </section>
   );
 };
