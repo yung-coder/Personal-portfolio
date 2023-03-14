@@ -2,13 +2,16 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "./page.module.css";
 import Navbar from "../../components/Navbar";
+import Pic from "../../public/assests/two.jpg";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main>
-       <Navbar />
+      <div className="w-screen h-screen bg-[#000]">
+        <Navbar />
+      </div>
     </main>
-  )
+  );
 }
