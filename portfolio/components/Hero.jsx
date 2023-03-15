@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     // <section className={`w-full h-screen  border `}>
     <div
-      className={`border border-blue-500 h-screen flex justify-center space-x-5 items-center`}
+      className={`h-screen flex justify-center space-x-5 items-center`}
     >
       <div className="flex space-x-2 ">
         <div className="flex flex-col justify-center items-center mt-5">

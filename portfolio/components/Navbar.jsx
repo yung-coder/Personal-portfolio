@@ -2,10 +2,15 @@
 
 import React, { useState } from "react";
 
+import { motion } from "framer-motion";
+
+import { navVariants } from "../utils/motion";
+
 const Navbar = () => {
   const [toogle, setoogle] = useState(false);
   return (
-    <nav className="bg-black text-white flex items-center fixed w-full p-1 ">
+    <motion.nav className=" text-white flex items-center  w-full p-5 " variants={navVariants} initial="hidden"
+    whileInView="show">
       <div className="flex w-full  justify-between mx-auto p-3">
         <div className="">
           <h1>Saksham | Developer</h1>
@@ -68,7 +73,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
