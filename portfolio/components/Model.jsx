@@ -13,8 +13,8 @@ const Model = () => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={0.75}
-        position={[0, -3.25, -1.5]}
+        scale={3}
+        position={[0, 0.7, -1.5]}
       />
     </mesh>
   );
@@ -30,7 +30,7 @@ const ComputerCanvas = () => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
-          enableZoom={true}
+          enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
