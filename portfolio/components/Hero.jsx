@@ -6,7 +6,8 @@ import ComputerCanvas from "./Model";
 import { motion, Variants } from "framer-motion";
 import { TypingText } from "./CustomText";
 
-import { fadeIn, staggerContainer } from "../utils/motion";
+import { fadeIn, staggerContainer, navVariants } from "../utils/motion";
+import EarthCanvas from "./Earth";
 
 const Hero = () => {
   return (
@@ -27,14 +28,14 @@ const Hero = () => {
             whileInView="show"
             viewport={{ once: false, amount: 0.25 }}
           >
-            <div className="flex space-x-8">
+            <div className="flex space-x-4">
               <TypingText
                 title="Hi , I'm"
-                textStyles={`text-white ${styles.heroHeadText}`}
+                textStyles={`text-white ${styles.heroHeadText} drop-shadow-lg `}
               />
               <TypingText
                 title="Saksham"
-                textStyles={`text-[#915EFF] ${styles.heroHeadText}`}
+                textStyles={`text-[#915EFF] ${styles.heroHeadText} drop-shadow-lg text-amber-300`}
               />
             </div>
             <div>
@@ -49,8 +50,8 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="w-[400px] h-96">
-        <ComputerCanvas />
+      <div className="w-[900px] h-96">
+        <EarthCanvas />
       </div>
 
       {/* <div>
