@@ -7,13 +7,13 @@ import {
 import "react-circular-progressbar/dist/styles.css";
 import RadialSeparators from "./Seprators";
 
-const SkillProgressInd = ({ techname }) => {
+const SkillProgressInd = ({ techname, progress }) => {
   return (
     <>
-      <div style={{ width: 200, height: 200, margin: "31px" }}>
+      <div style={{ width: 180, height: 180, margin: "31px" }}>
         <CircularProgressbarWithChildren
-          value={80}
-          text={`${80}%`}
+          value={progress}
+          text={`${progress}%`}
           strokeWidth={10}
           styles={buildStyles({
             strokeLinecap: "butt",
@@ -29,8 +29,8 @@ const SkillProgressInd = ({ techname }) => {
             }}
           />
 
-          <div style={{ fontSize: 12, marginTop: 50, color: "white" }}>
-            {techname}
+          <div style={{ fontSize: 12, marginTop: 53, color: "white" }}>
+            <h1 className="font-bold text-sm">{techname}</h1>
           </div>
         </CircularProgressbarWithChildren>
       </div>
