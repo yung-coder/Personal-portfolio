@@ -9,7 +9,7 @@ import { navVariants } from "../utils/motion";
 const Navbar = () => {
   const [toogle, setoogle] = useState(false);
   return (
-    <motion.nav className=" text-white flex items-center  w-full p-5 " variants={navVariants} initial="hidden"
+    <motion.nav className="backdrop-blur-3xl  text-white flex items-center  w-full p-5 " variants={navVariants} initial="hidden"
     whileInView="show">
       <div className="flex w-full  justify-between mx-auto p-3">
         <div className="">
