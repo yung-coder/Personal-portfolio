@@ -6,17 +6,24 @@ import {
 } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import RadialSeparators from "./Seprators";
+import { motion, Variants } from "framer-motion";
 
 const SkillProgressInd = ({ techname, progress }) => {
   return (
     <>
-      <div style={{ width: 180, height: 180, margin: "31px" }}>
+      {/* <motion.div whileHover={{ scale: 1.2 }} > */}
+      <motion.div
+        whileHover={{ scale: 1.2 }}
+        style={{ width: 180, height: 180, margin: "31px", cursor: "pointer" }}
+      >
         <CircularProgressbarWithChildren
           value={progress}
           text={`${progress}%`}
           strokeWidth={10}
           styles={buildStyles({
             strokeLinecap: "butt",
+            pathTransition: "none",
+            pathColor: "#915EFF",
           })}
         >
           <RadialSeparators
@@ -33,7 +40,8 @@ const SkillProgressInd = ({ techname, progress }) => {
             <h1 className="font-bold text-sm">{techname}</h1>
           </div>
         </CircularProgressbarWithChildren>
-      </div>
+      </motion.div>
+      {/* </motion.div> */}
     </>
   );
 };
