@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     // <section className={`w-full h-screen  border `}>
     <div
-      className={`h-screen flex flex-col justify-center  items-center backdrop-blur-sm md:flex-row`}
+      className={`h-screen flex flex-col justify-center  items-center  md:flex-row`}
     >
       <div className="flex justify-center  space-x-3  max-h-max  w-1/2 ">
         <motion.div
