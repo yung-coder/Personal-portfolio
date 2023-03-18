@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import "./contact.css";
 const Contact = () => {
@@ -34,7 +36,7 @@ const Contact = () => {
               id=""
               cols="30"
               rows="10"
-              className="bg-[#151030] text-white    "
+              className="bg-[#151030] text-white"
             ></textarea>
           </label>
         </form>
