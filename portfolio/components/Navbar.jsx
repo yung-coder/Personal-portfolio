@@ -9,7 +9,7 @@ import { navVariants } from "../utils/motion";
 const Navbar = () => {
   const [toogle, setoogle] = useState(false);
   return (
-    <motion.nav className="backdrop-blur-3xl  text-white flex items-center  w-full p-5 " variants={navVariants} initial="hidden"
+    <motion.nav className="  text-white flex items-center   w-full p-5 " variants={navVariants} initial="hidden"
     whileInView="show">
       <div className="flex w-full  justify-between mx-auto p-3">
         <div className="">
@@ -62,7 +62,7 @@ const Navbar = () => {
             <div
               className={`${
                 !toogle ? "hidden" : "flex"
-              } p-6 bg-black absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+              } p-6  backdrop-blur-3xl absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl bg-transparent`}
             >
               <ul className="flex  flex-col justify-center space-y-5 p-0.5">
                 <li>About</li>

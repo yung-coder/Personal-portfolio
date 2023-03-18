@@ -12,7 +12,7 @@ import EarthCanvas from "./Earth";
 const Hero = () => {
   return (
     // <section className={`w-full h-screen  border `}>
-    <div className={`h-screen flex justify-center  items-center backdrop-blur-sm`}>
+    <div className={`h-screen flex flex-col justify-center  items-center backdrop-blur-sm md:flex-row`}>
       <div className="flex justify-center  space-x-3  max-h-max  w-1/2 ">
         <motion.div
           variants={navVariants}
@@ -53,7 +53,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="w-1/2 h-full ">
+      <div className="w-full h-96 md:h-full md:w-1/2">
         <EarthCanvas />
       </div>
 
