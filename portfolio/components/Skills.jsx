@@ -13,11 +13,11 @@ import { TypingText } from "./CustomText";
 const Skills = () => {
   const percentage = 66;
   return (
-    <motion.div
+    <motion.section
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      className="w-full   max-h-full  background-skills flex flex-col justify-between items-center  "
+      className="w-full  min-h-[100vh]  background-skills flex flex-col justify-between items-center  "
     >
       <TypingText
         title="S K I L L S"
@@ -33,7 +33,7 @@ const Skills = () => {
           <SkillProgressInd techname={skill.name} progress={skill.progress} />
         ))}
       </motion.div>
-    </motion.div>
+    </motion.section>
   );
 };
 
