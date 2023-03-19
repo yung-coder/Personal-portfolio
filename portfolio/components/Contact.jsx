@@ -17,7 +17,7 @@ import { styles } from "../src/app/style";
 const Contact = () => {
   return (
     <motion.div
-      className="max-h-full w-screen background-contact flex flex-col justify-center items-center"
+      className="max-h-full w-full background-contact flex flex-col justify-center items-center "
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
@@ -26,7 +26,7 @@ const Contact = () => {
         title="Contact"
         textStyles={`text-white ${styles.heroHeadText} drop-shadow-lg  underline`}
       />
-      <div className="flex w-screen h-screen">
+      <div className="flex flex-col md:flex-row w-full h-screen">
         <motion.div
           className="w-1/2 flex justify-center items-center h-screen "
           variants={staggerContainer}
@@ -35,7 +35,7 @@ const Contact = () => {
         >
           <motion.div
             className="p-5 flex flex-col space-y-6 bg-[#151030] bg-opacity-25 backdrop-blur-lg rounded drop-shadow-lg w-fit"
-            variants={fadeIn("up", "spring", 1.3 * 0.5, 1)}
+            variants={fadeIn("down", "spring", 1.3 * 0.5, 1)}
             initial="hidden"
             whileInView="show"
           >

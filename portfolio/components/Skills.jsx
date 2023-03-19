@@ -17,7 +17,7 @@ const Skills = () => {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      className="w-screen backdrop-blur-md h-screen  background-skills flex flex-col justify-between items-center  p-1"
+      className="w-full   max-h-full  background-skills flex flex-col justify-between items-center  "
     >
       <TypingText
         title="S K I L L S"
@@ -27,7 +27,7 @@ const Skills = () => {
         variants={navVariants}
         initial="hidden"
         whileInView="show"
-        className="flex  w-fit  max-h-screen flex-wrap  justify-center items-center   overflow-y-scroll p-10"
+        className="flex w-fit  max-h-full flex-wrap  justify-center items-center   "
       >
         {skills.map((skill) => (
           <SkillProgressInd techname={skill.name} progress={skill.progress} />

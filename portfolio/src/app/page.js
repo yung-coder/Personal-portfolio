@@ -17,7 +17,9 @@ export default function Home() {
         <Navbar />
         <Hero />
       </div>
+
       <Skills />
+
       <div className="relative z-0">
         <StarsCanvas />
         <Contact />
