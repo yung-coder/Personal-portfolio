@@ -5,6 +5,8 @@ import "./contact.css";
 import PhoneCanvas from "./Phone";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import {
   slideIn,
@@ -55,7 +57,19 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          toast.success(
+            "Thank you. I will get back to you as soon as possible.",
+            {
+              position: "top-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "dark",
+            }
+          );
 
           setForm({
             name: "",
@@ -66,8 +80,16 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
+          toast.error("Sorry, Please wait and try again", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
         }
       );
   };
@@ -151,15 +173,46 @@ const Contact = () => {
             </form>
           </motion.div>
         </div>
-        <motion.div
-          className="w-1/2   h-screen"
+        <motion.a
+          className="w-1/2   h-screen cursor-pointer  flex flex-col justify-center items-center"
           variants={slideIn("left", "spring", 1 * 0.5, 1)}
           initial="hidden"
+          href="tel:7807717169"
           whileInView="show"
         >
+          <div className="animate-pulse flex justify-center items-center flex-col mt-5">
+            <h1 className="text-white">TAP TO CALL</h1>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+
           <PhoneCanvas />
-        </motion.div>
+        </motion.a>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </section>
   );
 };
