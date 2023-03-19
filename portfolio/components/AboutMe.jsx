@@ -1,71 +1,49 @@
-import React from 'react'
+"use client";
+
+import React from "react";
+import { motion, Variants } from "framer-motion";
+import { TypingText } from "./CustomText";
+
+import {
+  fadeIn,
+  staggerContainer,
+  navVariants,
+  textContainer,
+  textVariant,
+  textVariant2,
+} from "../utils/motion";
 
 const AboutMe = () => {
   return (
-    <div className='text-white w-screen h-screen'>
-     {/* <motion.div
-          className="p-5 flex flex-col space-y-6 bg-[#151030] bg-opacity-25 backdrop-blur-lg rounded drop-shadow-lg w-fit"
-          variants={fadeIn("down", "spring", 1.3 * 0.5, 1)}
+    <div className="text-white w-screen h-screen  flex justify-center items-center">
+      <motion.div
+        className=" w-[800px]  justify-start items-start  h-96 p-5 flex flex-col backdrop-blur-sm rounded-md shadow-lg"
+        variants={navVariants}
+        initial="hidden"
+        whileInView="show"
+      >
+        <div className="flex flex-col">
+          <h2 className="text-sm text-gray-400">INTRODUCTION</h2>
+          <h1 className="text-2xl  font-bold">OVERVIEW</h1>
+        </div>
+        <motion.div
+          variants={textContainer}
           initial="hidden"
           whileInView="show"
+          className="w-full flex flex-wrap mt-4"
         >
-          <div className="flex flex-col space-y-2">
-            <h1 className="text-gray-400 text-sm">GET IN TOUCH</h1>
-            <h2 className="text-white text-2xl">Contact</h2>
-          </div>
-          <form
-            action=""
-            className="flex flex-col space-y-3"
-            ref={formRef}
-            onSubmit={handleSubmit}
-          >
-            <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your Name</span>
-              <input
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                class="block mb-2 text-sm font-medium text-white bg-[#151030]  rounded-md p-1"
-                placeholder="Enter you name"
-              />
-            </label>
-
-            <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your Email</span>
-              <input
-                type="text"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                class="block mb-2 text-sm font-medium text-white bg-[#151030] rounded-md p-1"
-                placeholder="Enter you email"
-              />
-            </label>
-            <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your Message</span>
-              <textarea
-                name="message"
-                id=""
-                cols="30"
-                rows="10"
-                value={form.message}
-                onChange={handleChange}
-                className="bg-[#151030] text-white"
-              ></textarea>
-            </label>
-
-            <button
-              type="submit"
-              className="bg-red-500 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md "
-            >
-              Send
-            </button>
-          </form>
-        </motion.div> */}
-        sdaasdasdas
+          <TypingText
+            title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
+            nesciunt, quia magnam fuga molestias pariatur explicabo minima
+            exercitationem ex ab architecto impedit temporibus, assumenda hic
+            ratione neque reprehenderit autem delectus adipisci fugiat? Cumque,
+            ipsa?"
+            textStyles="break-all text-gray-400"
+          />
+        </motion.div>
+      </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default AboutMe
+export default AboutMe;
