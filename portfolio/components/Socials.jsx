@@ -17,7 +17,7 @@ const Socials = () => {
       variants={navVariants}
     >
       <motion.div
-        className="shadow-md  bg-white bg-opacity-25 backdrop-blur-md p-4 h-60 rounded-xl flex justify-center items-center space-y-5 flex-col"
+        className="shadow-md  bg-black bg-opacity-25 backdrop-blur-md p-4 h-60 rounded-xl flex justify-center items-center space-y-5 flex-col"
       >
         <div>
           <a href="">
