@@ -17,15 +17,18 @@ export default function Home() {
         <StarsCanvas />
         <Navbar />
         <Hero />
+      </div>
+      <div className="relative z-0">
+        <StarsCanvas />
+        <AboutMe />
+      </div>
+      <div className="relative z-0">
+        <StarsCanvas />
         <Skills />
       </div>
       <div className="relative z-0">
         <StarsCanvas />
         <Contact />
-      </div>
-      <div className="relative z-0">
-        <StarsCanvas />
-        <AboutMe />
       </div>
     </main>
   );
