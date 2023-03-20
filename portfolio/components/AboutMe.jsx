@@ -18,12 +18,12 @@ import Socials from "./Socials";
 
 const AboutMe = () => {
   return (
-    <div className="text-white w-screen h-screen space-x-4  flex justify-center items-center ">
+    <div className="text-white w-screen max-h-full md:h-screen md:flex-row  flex justify-center items-center flex-col">
       <motion.div ariants={navVariants} initial="hidden" whileInView="show">
         <Socials />
       </motion.div>
       <motion.div
-        className=" w-[800px] justify-start items-start  h-fit p-5 flex flex-col backdrop-blur-sm rounded-md shadow-2xl"
+        className=" w-[400px] md:w-[800px] justify-center items-center md:justify-start md:items-start h-fit p-5 flex flex-col backdrop-blur-sm rounded-md shadow-2xl "
         variants={navVariants}
         initial="hidden"
         whileInView="show"
@@ -47,7 +47,7 @@ const AboutMe = () => {
             textStyles="break-all text-gray-400"
           />
         </motion.div>
-        <div className="flex p-4 space-x-3 mt-4">
+        <div className="flex p-4 justify-center items-center md:flex-row  md:space-x-3 md:space-y-0 mt-4 flex-col space-y-4">
           {services.map((service) => (
             <ServiceCard title={service.title} img={service.img} />
           ))}

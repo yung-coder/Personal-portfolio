@@ -16,9 +16,7 @@ const Socials = () => {
       className="h-fit p-5 w-[260px] flex justify-center items-center"
       variants={navVariants}
     >
-      <motion.div
-        className="shadow-md  bg-black bg-opacity-25 backdrop-blur-md p-4 h-60 rounded-xl flex justify-center items-center space-y-5 flex-col"
-      >
+      <motion.div className="shadow-md  bg-black bg-opacity-25 backdrop-blur-md p-4 h-14 md:h-60 md:space-x-0 md:space-y-7  md:flex-col rounded-xl flex justify-center items-center  space-x-7">
         <div>
           <a href="">
             <img
