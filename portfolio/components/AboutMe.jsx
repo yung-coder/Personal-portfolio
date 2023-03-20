@@ -12,19 +12,21 @@ import {
   textVariant,
   textVariant2,
 } from "../utils/motion";
+import { services } from "../utils/Constants";
+import ServiceCard from "./ServiceCard";
 
 const AboutMe = () => {
   return (
-    <div className="text-white w-screen h-screen  flex justify-center items-center">
+    <div className="text-white w-screen h-screen  flex justify-center items-center ">
       <motion.div
-        className=" w-[800px]  justify-start items-start  h-96 p-5 flex flex-col backdrop-blur-sm rounded-md shadow-lg"
+        className=" w-[800px]  justify-start items-start  h-fit p-5 flex flex-col backdrop-blur-sm rounded-md shadow-2xl"
         variants={navVariants}
         initial="hidden"
         whileInView="show"
       >
         <div className="flex flex-col">
           <h2 className="text-sm text-gray-400">INTRODUCTION</h2>
-          <h1 className="text-2xl  font-bold">OVERVIEW</h1>
+          <h1 className="text-2xl  font-bold">Overview</h1>
         </div>
         <motion.div
           variants={textContainer}
@@ -41,6 +43,11 @@ const AboutMe = () => {
             textStyles="break-all text-gray-400"
           />
         </motion.div>
+        <div className="flex p-4 space-x-3 mt-4">
+          {services.map((service) => (
+            <ServiceCard  title={service.title} img={service.img}/>
+          ))}
+        </div>
       </motion.div>
     </div>
   );

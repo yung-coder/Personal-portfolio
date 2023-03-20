@@ -56,3 +56,22 @@ export const skills = [
     progress: 85,
   },
 ];
+
+export const services = [
+  {
+    title: "Web Developer",
+    img: "https://cdn-icons-png.flaticon.com/512/785/785126.png",
+  },
+  {
+    title: "Flutter Developer",
+    img: "https://cdn-icons-png.flaticon.com/512/9412/9412431.png",
+  },
+  {
+    title: "Nodejs Developer",
+    img: "https://cdn-icons-png.flaticon.com/512/9412/9412402.png",
+  },
+  {
+    title: "Frontend Developer",
+    img: "https://cdn-icons-png.flaticon.com/512/9412/9412421.png",
+  },
+];
