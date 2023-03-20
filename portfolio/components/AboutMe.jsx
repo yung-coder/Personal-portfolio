@@ -14,12 +14,16 @@ import {
 } from "../utils/motion";
 import { services } from "../utils/Constants";
 import ServiceCard from "./ServiceCard";
+import Socials from "./Socials";
 
 const AboutMe = () => {
   return (
-    <div className="text-white w-screen h-screen  flex justify-center items-center ">
+    <div className="text-white w-screen h-screen space-x-4  flex justify-center items-center ">
+      <motion.div ariants={navVariants} initial="hidden" whileInView="show">
+        <Socials />
+      </motion.div>
       <motion.div
-        className=" w-[800px]  justify-start items-start  h-fit p-5 flex flex-col backdrop-blur-sm rounded-md shadow-2xl"
+        className=" w-[800px] justify-start items-start  h-fit p-5 flex flex-col backdrop-blur-sm rounded-md shadow-2xl"
         variants={navVariants}
         initial="hidden"
         whileInView="show"
@@ -45,7 +49,7 @@ const AboutMe = () => {
         </motion.div>
         <div className="flex p-4 space-x-3 mt-4">
           {services.map((service) => (
-            <ServiceCard  title={service.title} img={service.img}/>
+            <ServiceCard title={service.title} img={service.img} />
           ))}
         </div>
       </motion.div>
