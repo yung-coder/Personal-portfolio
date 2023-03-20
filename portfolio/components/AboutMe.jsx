@@ -18,12 +18,12 @@ import Socials from "./Socials";
 
 const AboutMe = () => {
   return (
-    <div className="text-white w-screen max-h-full md:h-screen md:flex-row  flex justify-center items-center flex-col">
+    <div className="text-white w-screen max-h-full md:h-screen md:flex-row  flex justify-center items-center flex-col p-5">
       <motion.div ariants={navVariants} initial="hidden" whileInView="show">
         <Socials />
       </motion.div>
       <motion.div
-        className=" w-[400px] md:w-[800px] justify-center items-center md:justify-start md:items-start h-fit p-5 flex flex-col backdrop-blur-sm rounded-md shadow-2xl "
+        className=" w-[350px] md:w-[800px] justify-center items-center md:justify-start md:items-start h-fit p-5 flex flex-col backdrop-blur-sm rounded-md shadow-2xl "
         variants={navVariants}
         initial="hidden"
         whileInView="show"
