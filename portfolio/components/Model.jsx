@@ -10,11 +10,20 @@ const Model = () => {
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
+      <spotLight
+        position={[-20, 50, 10]}
+        angle={0.12}
+        penumbra={1}
+        intensity={1}
+        castShadow
+        shadow-mapSize={1024}
+      />
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={3}
-        position={[0, 0.7, -1.5]}
+        scale={1}
+        position={[0, -2.22, -1.5]}
+        rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
   );
@@ -25,6 +34,7 @@ const ComputerCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
+      dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
@@ -36,6 +46,7 @@ const ComputerCanvas = () => {
         />
         <Model />
       </Suspense>
+
       <Preload all />
     </Canvas>
   );
