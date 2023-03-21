@@ -13,7 +13,7 @@ async function Projects() {
   };
   const { project } = await getData();
   return (
-    <div className="h-screen w-screen border flex justify-center items-center">
+    <div className="h-screen w-screen  flex justify-center items-center">
       <ProkectSection projects={project} />
     </div>
   );

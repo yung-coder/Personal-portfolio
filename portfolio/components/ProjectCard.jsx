@@ -1,9 +1,14 @@
 import React from "react";
 import { urlFor } from "../lib/client";
 
+import { motion } from "framer-motion";
+
+import { fadeIn, navVariants } from "../utils/motion";
+
 const ProjectCard = ({ project }) => {
   return (
-    <a
+    <motion.a
+      variants={fadeIn("up", "tween", 0.4, 2)}
       href="#"
       class="block backdrop-blur-md bg-opacity-20 rounded-md bg-black p-2 "
     >
@@ -38,7 +43,7 @@ const ProjectCard = ({ project }) => {
           />
         </svg>
       </div>
-    </a>
+    </motion.a>
   );
 };
 
