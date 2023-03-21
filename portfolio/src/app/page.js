@@ -31,7 +31,10 @@ export default function Home() {
         <StarsCanvas />
         <Contact />
       </div>
-      <Projects />
+      <div className="relative z-0">
+        <StarsCanvas />
+        <Projects />
+      </div>
     </main>
   );
 }
