@@ -7,6 +7,7 @@ import Skills from "../../components/Skills";
 import Contact from "../../components/Contact";
 import StarsCanvas from "../../components/Stars";
 import AboutMe from "../../components/AboutMe";
+import Projects from "../../components/Projects";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ export default function Home() {
         <StarsCanvas />
         <Contact />
       </div>
+      <Projects />
     </main>
   );
 }
