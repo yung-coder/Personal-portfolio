@@ -11,7 +11,7 @@ const ProkectSection = ({ projects }) => {
   console.log(projects);
   return (
     <motion.div
-      className="w-fit flex h-fit space-x-7 p-5 justify-center items-center"
+      className="w-fit flex border flex-col h-fit md:space-y-0 md:space-x-7 md:flex-row space-y-7 p-5 justify-center items-center"
       variants={navVariants}
       initial="hidden"
       whileInView="show"

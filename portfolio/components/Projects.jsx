@@ -13,8 +13,29 @@ async function Projects() {
   };
   const { project } = await getData();
   return (
-    <div className="h-screen w-screen  flex justify-center items-center">
-      <ProkectSection projects={project} />
+    <div className="max-h-full w-screen  md:h-screen  flex flex-col justify-center items-center">
+      <div>
+        <ProkectSection projects={project} />
+      </div>
+      <div className="mt-7 flex space-x-4">
+        <h1 className="text-white">EXPLORE MORE PROJECTS</h1>
+        <Link href={`/Projects`}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </Link>
+      </div>
     </div>
   );
 }
