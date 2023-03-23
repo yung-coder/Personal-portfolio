@@ -10,7 +10,7 @@ const ProjectCard = ({ project }) => {
     <motion.a
       variants={fadeIn("up", "tween", 0.4, 2)}
       href="#"
-      class="block backdrop-blur-md bg-opacity-20 rounded-md bg-black p-2 "
+      class="block backdrop-blur-md bg-opacity-20 rounded-md bg-black p-2 m-4"
     >
       <img
         alt="Art"

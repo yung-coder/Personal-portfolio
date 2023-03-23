@@ -4,7 +4,7 @@ import Projects from "./Projects";
 
 async function ProjectApi() {
   const getData = async () => {
-    const query = '*[_type == "project"]';
+    const query = '*[_type == "project"][0..3]';
     const project = await client.fetch(query);
 
     return { project };
