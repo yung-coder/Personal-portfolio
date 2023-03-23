@@ -9,7 +9,7 @@ import { Mesh } from "three";
 const Model = () => {
   const phone = useGLTF("./phone/scene.gltf");
   return (
-    <primitive object={phone.scene} scale={3.5} position-y={0} rotation-y={0} />
+    <primitive object={phone.scene} scale={4} position-y={0} rotation-y={0} />
   );
 };
 

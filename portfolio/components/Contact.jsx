@@ -174,13 +174,13 @@ const Contact = () => {
           </motion.div>
         </div>
         <motion.a
-          className="w-1/2   h-screen cursor-pointer  flex flex-col justify-center items-center"
+          className="w-1/2   h-screen   flex flex-col justify-center space-y-4 items-center"
           variants={slideIn("left", "spring", 1 * 0.5, 1)}
           initial="hidden"
           href="tel:7807717169"
           whileInView="show"
         >
-          <div className="animate-pulse flex justify-center items-center flex-col mt-5">
+          <div className="animate-pulse flex justify-center items-center flex-col mt-5 ">
             <h1 className="text-white">TAP TO CALL</h1>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -197,8 +197,9 @@ const Contact = () => {
               />
             </svg>
           </div>
-
-          <PhoneCanvas />
+          <div className="rounded-lg phone-background h-96 w-1/2 cursor-pointer">
+            <PhoneCanvas />
+          </div>
         </motion.a>
       </div>
       <ToastContainer
