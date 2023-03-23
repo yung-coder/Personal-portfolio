@@ -20,10 +20,17 @@ const Skills = () => {
       whileInView="show"
       className="w-full   min-h-[100vh]  background-skills flex flex-col justify-between items-center "
     >
-      <TypingText
-        title="S K I L L S"
-        textStyles={`text-white ${styles.heroHeadText} drop-shadow-lg underline`}
-      />
+      <motion.div
+        className=" w-full flex justify-center items-center  bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-t border-gray-100"
+        variants={navVariants}
+        initial="hidden"
+        whileInView="show"
+      >
+        <TypingText
+          title="S K I L L S"
+          textStyles={`text-white ${styles.heroHeadText} drop-shadow-lg `}
+        />
+      </motion.div>
       <motion.div
         className="w-full h-96 opacity-25"
         variants={navVariants}

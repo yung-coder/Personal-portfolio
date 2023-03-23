@@ -16,6 +16,7 @@ const ProkectSection = ({ projects }) => {
       initial="hidden"
       whileInView="show"
     >
+      
       {projects.map((project) => (
         <ProjectCard project={project} />
       ))}

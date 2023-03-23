@@ -102,10 +102,17 @@ const Contact = () => {
         whileInView="show"
         className=" flex w-full justify-center  items-center"
       >
-        <TypingText
-          title="Contact"
-          textStyles={`text-white ${styles.heroHeadText} drop-shadow-lg `}
-        />
+        <motion.div
+          className=" w-full flex justify-center items-center  bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-t border-gray-100"
+          variants={navVariants}
+          initial="hidden"
+          whileInView="show"
+        >
+          <TypingText
+            title="Contact"
+            textStyles={`text-white ${styles.heroHeadText} drop-shadow-lg `}
+          />
+        </motion.div>
       </motion.div>
       <div className="flex  flex-col md:flex-row w-full justify-center items-center">
         <div className="w-1/2  p-5 flex justify-center items-center">

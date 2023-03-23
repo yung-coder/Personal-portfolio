@@ -8,17 +8,18 @@ import Contact from "../../components/Contact";
 import StarsCanvas from "../../components/Stars";
 import AboutMe from "../../components/AboutMe";
 import Projects from "../../components/Projects";
-import { Black_Han_Sans , Reenie_Beanie , Luckiest_Guy } from "next/font/google";
+import { Black_Han_Sans, Reenie_Beanie, Luckiest_Guy } from "next/font/google";
+import ProjectApi from "../../components/ProjectApi";
 
 const hans = Black_Han_Sans({
-  weight: ['400'],
+  weight: ["400"],
   subsets: ["latin"],
 });
 
 const Lucky = Luckiest_Guy({
-  weight: ['400'],
+  weight: ["400"],
   subsets: ["latin"],
-  variable: '--font-lucky',
+  variable: "--font-lucky",
 });
 
 const inter = Inter({ subsets: ["latin"] });
@@ -41,11 +42,11 @@ export default function Home() {
       </div>
       <div className="relative z-0">
         <StarsCanvas />
-        <Contact />
+        <ProjectApi />
       </div>
       <div className="relative z-0">
         <StarsCanvas />
-        <Projects />
+        <Contact />
       </div>
     </main>
   );
