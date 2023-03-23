@@ -18,7 +18,7 @@ const Skills = () => {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      className="w-full  min-h-[100vh]  background-skills flex flex-col justify-between items-center "
+      className="w-full   min-h-[100vh]  background-skills flex flex-col justify-between items-center "
     >
       <TypingText
         title="S K I L L S"

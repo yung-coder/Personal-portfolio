@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-
-}
 
 .background {
   margin-top: 0;
