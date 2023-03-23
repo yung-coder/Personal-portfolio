@@ -8,10 +8,10 @@ import { TypingText } from "./CustomText";
 
 import { fadeIn, staggerContainer, navVariants } from "../utils/motion";
 import EarthCanvas from "./Earth";
+import Socials from "./Socials";
 
 const Hero = () => {
   return (
-    // <section className={`w-full h-screen  border `}>
     <div
       className={`h-screen flex flex-col justify-center  items-center  md:flex-row`}
     >
@@ -43,13 +43,19 @@ const Hero = () => {
                 textStyles={`text-[#915EFF] ${styles.heroHeadText} drop-shadow-lg text-amber-300`}
               />
             </div>
-            <div>
+            <div className="flex flex-col">
               <motion.p
                 variants={fadeIn("up", "tween", 0.2, 1)}
                 className={`${styles.heroSubText} mt-2 text-white-100`}
               >
-                Front-end Webdeveloper <br className="sm:block hidden" />
+                I develope Web apps and
+                <br className="sm:block hidden" />
+                android apps
+                <br className="sm:block hidden" />
               </motion.p>
+              <motion.div variants={fadeIn("up", "tween", 0.2, 1)} >
+                <Socials />
+              </motion.div>
             </div>
           </motion.div>
         </div>
@@ -58,16 +64,6 @@ const Hero = () => {
       <div className="w-full h-96 md:h-full md:w-1/2">
         <EarthCanvas />
       </div>
-
-      {/* <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915EFF]">Adrian</span>  
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className="sm:block hidden" />
-            interfaces and web applications
-          </p>
-        </div> */}
     </div>
   );
 };

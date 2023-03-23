@@ -13,10 +13,10 @@ import {
 const Socials = () => {
   return (
     <motion.div
-      className="h-fit p-5 w-[260px] flex justify-center items-center"
+      className="h-fit w-[270px] p-2 flex justify-start items-start"
       variants={navVariants}
     >
-      <motion.div className="shadow-md  bg-black bg-opacity-25 backdrop-blur-md p-4 h-14 md:h-60 md:space-x-0 md:space-y-7  md:flex-col rounded-xl flex justify-center items-center  space-x-7">
+      <motion.div className="shadow-md  bg-black bg-opacity-25 backdrop-blur-md  p-4 h-14  rounded-xl flex justify-center items-center  space-x-7">
         <div>
           <a href="">
             <img
