@@ -6,20 +6,38 @@ import { motion } from "framer-motion";
 
 import { navVariants } from "../utils/motion";
 
+import logo from "../public/assets/img/logo.png";
+
 const Navbar = () => {
   const [toogle, setoogle] = useState(false);
   return (
-    <motion.nav className="  text-white flex items-center   w-full p-5 " variants={navVariants} initial="hidden"
-    whileInView="show">
-      <div className="flex w-full  justify-between mx-auto p-3">
-        <div className="">
-          <h1>Saksham | Developer</h1>
+    <motion.nav
+      className="  text-white flex items-center   w-full p-5 "
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
+    >
+      <div className="flex w-full  justify-between items-center mx-auto p-3">
+        <div className="flex flex-col ">
+          <h1 className="text-xl text-amber-300 font-bold italic  tracking-wider">
+            Saksham
+          </h1>
+          <h2 className="text-amber-300 text-xs">the developer</h2>
         </div>
         <div className="">
-          <ul className="hidden md:flex  justify-center items-center space-x-4">
-            <li>About</li>
-            <li>Work </li>
-            <li>Contact</li>
+          <ul className="hidden md:flex  cursor-pointer  font-bold  justify-center items-center space-x-4">
+            <li className=" tracking-wide text-gray-400 hover:text-white">
+              About
+            </li>
+            <li className=" tracking-wide text-gray-400 hover:text-white">
+              Skills
+            </li>
+            <li className=" tracking-wide text-gray-400 hover:text-white">
+              Portfolio
+            </li>
+            <li className=" tracking-wide text-gray-400 hover:text-white">
+              Contact
+            </li>
           </ul>
           <div className="block md:hidden">
             {!toogle ? (
