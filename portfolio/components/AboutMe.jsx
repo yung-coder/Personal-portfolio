@@ -11,6 +11,7 @@ import {
   textContainer,
   textVariant,
   textVariant2,
+  sectionVariants,
 } from "../utils/motion";
 import { services } from "../utils/Constants";
 import ServiceCard from "./ServiceCard";
@@ -22,7 +23,7 @@ const AboutMe = () => {
     <section className="text-white w-screen max-h-full md:h-screen   flex flex-col ">
       <motion.div
         className=" w-full flex justify-center items-center  bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-t border-gray-100"
-        variants={navVariants}
+        variants={sectionVariants}
         initial="hidden"
         whileInView="show"
       >

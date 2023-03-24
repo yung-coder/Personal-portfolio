@@ -40,7 +40,7 @@ export default function Home() {
         <StarsCanvas />
         <Skills />
       </div>
-      <div className="relative z-0" id="Project">
+      <div className="relative z-0 mt-3" id="Project">
         <StarsCanvas />
         <ProjectApi />
       </div>

@@ -13,6 +13,7 @@ import {
   staggerContainer,
   fadeIn,
   navVariants,
+  sectionVariants,
 } from "../utils/motion";
 import { TypingText } from "./CustomText";
 import { styles } from "../src/app/style";
@@ -104,7 +105,7 @@ const Contact = () => {
       >
         <motion.div
           className=" w-full flex justify-center items-center  bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-t border-gray-100"
-          variants={navVariants}
+          variants={sectionVariants}
           initial="hidden"
           whileInView="show"
         >

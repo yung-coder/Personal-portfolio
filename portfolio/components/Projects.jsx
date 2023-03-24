@@ -4,7 +4,7 @@ import { ProjectsClient } from "@sanity/client";
 import Link from "next/link";
 import React from "react";
 import { client } from "../lib/client";
-import { navVariants } from "../utils/motion";
+import { navVariants, sectionVariants } from "../utils/motion";
 import ProkectSection from "./ProkectSection";
 import { styles } from "../src/app/style";
 import { motion, Variants } from "framer-motion";
@@ -15,7 +15,7 @@ function Projects({ project }) {
     <section className="max-h-full w-screen  md:h-screen  flex flex-col justify-center items-center">
       <motion.div
         className=" w-full flex justify-center items-center  bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-t border-gray-100"
-        variants={navVariants}
+        variants={sectionVariants}
         initial="hidden"
         whileInView="show"
       >

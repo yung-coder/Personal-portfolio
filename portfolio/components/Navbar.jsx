@@ -83,9 +83,18 @@ const Navbar = () => {
               } p-6  backdrop-blur-3xl absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl bg-transparent`}
             >
               <ul className="flex  flex-col justify-center space-y-5 p-0.5">
-                <li>About</li>
-                <li>Work </li>
-                <li>Contact</li>
+                <li className="cursor-pointer">
+                  <a href="#About">About</a>
+                </li>
+                <li className="cursor-pointer">
+                  <a href="#skills">Skills</a>
+                </li>
+                <li className="cursor-pointer">
+                  <a href="#Project">Portfolio</a>
+                </li>
+                <li className="cursor-pointer">
+                  <a href="#Contact">Contact</a>
+                </li>
               </ul>
             </div>
           </div>

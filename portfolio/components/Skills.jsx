@@ -7,7 +7,7 @@ import "./skills.css";
 import { styles } from "../src/app/style";
 import { motion, Variants } from "framer-motion";
 
-import { fadeIn, staggerContainer, navVariants } from "../utils/motion";
+import { fadeIn, staggerContainer, navVariants, sectionVariants } from "../utils/motion";
 import { TypingText } from "./CustomText";
 import ComputerCanvas from "./Model";
 
@@ -22,7 +22,7 @@ const Skills = () => {
     >
       <motion.div
         className=" w-full flex justify-center items-center  bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-t border-gray-100"
-        variants={navVariants}
+        variants={sectionVariants}
         initial="hidden"
         whileInView="show"
       >
