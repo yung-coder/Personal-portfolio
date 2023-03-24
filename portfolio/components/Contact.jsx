@@ -204,7 +204,7 @@ const Contact = () => {
               />
             </svg>
           </div>
-          <div className="rounded-lg phone-background h-96 w-full cursor-pointer">
+          <div className="rounded-lg phone-background h-96 md:w-1/2 w-full cursor-pointer">
             <PhoneCanvas />
           </div>
         </motion.a>

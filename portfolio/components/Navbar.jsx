@@ -27,16 +27,16 @@ const Navbar = () => {
         <div className="">
           <ul className="hidden md:flex  cursor-pointer  font-bold  justify-center items-center space-x-4">
             <li className=" tracking-wide text-gray-400 hover:text-white">
-              About
+              <a href="#About">About</a>
             </li>
             <li className=" tracking-wide text-gray-400 hover:text-white">
-              Skills
+              <a href="#skills">Skills</a>
             </li>
             <li className=" tracking-wide text-gray-400 hover:text-white">
-              Portfolio
+              <a href="#Project">Portfolio</a>
             </li>
             <li className=" tracking-wide text-gray-400 hover:text-white">
-              Contact
+              <a href="#Contact">Contact</a>
             </li>
           </ul>
           <div className="block md:hidden">

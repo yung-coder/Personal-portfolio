@@ -27,24 +27,24 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className={`bg-[#050816] ${Lucky.variable} font-sans`}>
-      <div className="relative z-0">
+      <div className="relative z-0" id="home">
         <StarsCanvas />
         <Navbar />
         <Hero />
       </div>
-      <div className="relative z-0">
+      <div className="relative z-0" id="About">
         <StarsCanvas />
         <AboutMe />
       </div>
-      <div className="relative z-0">
+      <div className="relative z-0" id="skills">
         <StarsCanvas />
         <Skills />
       </div>
-      <div className="relative z-0">
+      <div className="relative z-0" id="Project">
         <StarsCanvas />
         <ProjectApi />
       </div>
-      <div className="relative z-0">
+      <div className="relative z-0" id="Contact">
         <StarsCanvas />
         <Contact />
       </div>

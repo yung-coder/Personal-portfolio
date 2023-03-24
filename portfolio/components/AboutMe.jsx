@@ -19,7 +19,7 @@ import { styles } from "../src/app/style";
 
 const AboutMe = () => {
   return (
-    <div className="text-white w-screen max-h-full md:h-screen   flex flex-col ">
+    <section className="text-white w-screen max-h-full md:h-screen   flex flex-col ">
       <motion.div
         className=" w-full flex justify-center items-center  bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-t border-gray-100"
         variants={navVariants}
@@ -95,7 +95,7 @@ const AboutMe = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 
