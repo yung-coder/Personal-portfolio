@@ -96,7 +96,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="min-h-[100vh] w-screen background-contact flex flex-col justify-center items-center ">
+    <section className="min-h-[100vh] w-full background-contact flex flex-col justify-center items-center ">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
