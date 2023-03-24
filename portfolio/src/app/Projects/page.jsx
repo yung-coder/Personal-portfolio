@@ -11,7 +11,7 @@ async function page() {
   };
   const { project } = await getData();
   return (
-    <div className="max-h-full w-screen border border-red-500 bg-[#050816] md:max-h-full flex flex-col justify-center items-center">
+    <div className="max-h-full w-screen  bg-[#050816] md:max-h-full flex flex-col justify-center items-center">
       <ProductPage projects={project}/>
     </div>
   );

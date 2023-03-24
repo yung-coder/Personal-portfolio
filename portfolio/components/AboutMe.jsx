@@ -35,7 +35,7 @@ const AboutMe = () => {
         <motion.div ariants={navVariants} initial="hidden" whileInView="show">
           <motion.a
             href="#"
-            class="group relative block w-96 h-80 backdrop-blur-3xl"
+            class="group relative block w-60 h-80 md:w-96  backdrop-blur-3xl"
             variants={fadeIn("up", "tween", 0.4, 2)}
           >
             <img
@@ -64,7 +64,7 @@ const AboutMe = () => {
           </motion.a>
         </motion.div>
         <motion.div
-          className=" w-[350px] md:w-[800px] justify-center items-center md:justify-start md:items-start h-fit p-5 flex flex-col backdrop-blur-sm rounded-md shadow-2xl "
+          className=" w-[350px] md:w-[800px] justify-center space-y-3 items-center md:justify-start md:items-start h-fit p-5 flex flex-col backdrop-blur-sm rounded-md shadow-2xl "
           variants={navVariants}
           initial="hidden"
           whileInView="show"
@@ -88,7 +88,7 @@ const AboutMe = () => {
               textStyles="break-all text-gray-400"
             />
           </motion.div>
-          <div className="flex p-4 justify-center items-center md:flex-row  md:space-x-3 md:space-y-0 mt-4 flex-col space-y-4">
+          <div className="flex  md:flex-row md:justify-center md:items-center md:space-x-3 md:space-y-0 mt-4 flex-row space-x-4 w-full p-5  overflow-scroll">
             {services.map((service) => (
               <ServiceCard title={service.title} img={service.img} />
             ))}

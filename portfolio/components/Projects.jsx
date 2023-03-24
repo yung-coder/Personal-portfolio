@@ -27,7 +27,12 @@ function Projects({ project }) {
       <div>
         <ProkectSection projects={project} />
       </div>
-      <div className="mt-7 flex space-x-4">
+      <motion.div
+        className="mt-7 flex space-x-4 h-28 md:h-full w-full justify-center items-center"
+        variants={navVariants}
+        initial="hidden"
+        whileInView="show"
+      >
         <h1 className="text-white">EXPLORE MORE PROJECTS</h1>
         <Link href={`/Projects`}>
           <svg
@@ -45,7 +50,7 @@ function Projects({ project }) {
             />
           </svg>
         </Link>
-      </div>
+      </motion.div>
     </div>
   );
 }
