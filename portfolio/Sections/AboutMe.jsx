@@ -6,11 +6,8 @@ import { TypingText } from "../components/CustomText";
 
 import {
   fadeIn,
-  staggerContainer,
   navVariants,
   textContainer,
-  textVariant,
-  textVariant2,
   sectionVariants,
 } from "../utils/motion";
 import { services } from "../utils/Constants";

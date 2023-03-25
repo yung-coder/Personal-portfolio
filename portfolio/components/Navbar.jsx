@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 import { navVariants } from "../utils/motion";
 
-import logo from "../public/assets/img/logo.png";
+
 
 const Navbar = () => {
   const [toogle, setoogle] = useState(false);

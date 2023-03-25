@@ -5,7 +5,7 @@ import { skills } from "../utils/Constants";
 import SkillProgressInd from "../components/SkillProgressInd";
 import "../custom-css/skills.css";
 import { styles } from "../src/app/style";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
 import {
   fadeIn,

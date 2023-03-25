@@ -1,14 +1,6 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
-import {
-  fadeIn,
-  staggerContainer,
-  navVariants,
-  textContainer,
-  textVariant,
-  textVariant2,
-  slideIn,
-} from "../utils/motion";
+import { navVariants } from "../utils/motion";
 
 const Socials = () => {
   return (

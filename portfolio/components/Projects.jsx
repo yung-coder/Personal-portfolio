@@ -3,7 +3,6 @@
 import { ProjectsClient } from "@sanity/client";
 import Link from "next/link";
 import React from "react";
-import { client } from "../lib/client";
 import { navVariants, sectionVariants } from "../utils/motion";
 import ProkectSection from "./ProkectSection";
 import { styles } from "../src/app/style";
