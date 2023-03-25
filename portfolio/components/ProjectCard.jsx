@@ -10,27 +10,27 @@ const ProjectCard = ({ project }) => {
     <motion.a
       variants={fadeIn("up", "tween", 0.4, 2)}
       href="#"
-      class="block backdrop-blur-md bg-opacity-20 rounded-md bg-black p-2 m-4"
+      className="block backdrop-blur-md bg-opacity-20 rounded-md bg-black p-2 m-4"
     >
       <img
         alt="Art"
         src={urlFor(project.image && project.image[0]).url()}
-        class="h-48 w-96 object-cover sm:h-80 lg:h-96 rounded-md"
+        className="h-48 w-96 object-cover sm:h-80 lg:h-96 rounded-md"
       />
 
-      <h3 class="mt-4 text-lg font-bold text-white  sm:text-xl">
+      <h3 className="mt-4 text-lg font-bold text-white  sm:text-xl">
         {project.name}
       </h3>
 
-      <p class="mt-2 max-w-sm text-gray-700">
+      <p className="mt-2 max-w-sm text-gray-700">
         {project.description.slice(0, 125)}...
       </p>
-      <div class="mt-4 gap-2 inline-flex items-center  text-indigo-600  ">
-        <p class="font-medium sm:text-lg">Repo Link</p>
+      <div className="mt-4 gap-2 inline-flex items-center  text-indigo-600  ">
+        <p className="font-medium sm:text-lg">Repo Link</p>
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 transition group-hover:translate-x-3"
+          className="h-6 w-6 transition group-hover:translate-x-3"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

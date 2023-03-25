@@ -140,7 +140,7 @@ const Contact = () => {
                   name="name"
                   value={form.name}
                   onChange={handleChange}
-                  class="block mb-2 text-sm font-medium text-white bg-[#151030]  rounded-md p-1"
+                  className="block mb-2 text-sm font-medium text-white bg-[#151030]  rounded-md p-1"
                   placeholder="Enter you name"
                 />
               </label>
@@ -152,7 +152,7 @@ const Contact = () => {
                   name="email"
                   value={form.email}
                   onChange={handleChange}
-                  class="block mb-2 text-sm font-medium text-white bg-[#151030] rounded-md p-1"
+                  className="block mb-2 text-sm font-medium text-white bg-[#151030] rounded-md p-1"
                   placeholder="Enter you email"
                 />
               </label>
@@ -196,7 +196,7 @@ const Contact = () => {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-6 h-6 text-white"
+              className="w-6 h-6 text-white"
             >
               <path
                 stroke-linecap="round"
@@ -233,7 +233,7 @@ const Contact = () => {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-8 h-8 text-white bg-[#151030] rounded-lg p-2 animate-bounce"
+            className="w-8 h-8 text-white bg-[#151030] rounded-lg p-2 animate-bounce"
           >
             <path
               stroke-linecap="round"
