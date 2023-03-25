@@ -11,7 +11,7 @@ const ProjectCard = ({ project }) => {
   return (
     <motion.a
       variants={fadeIn("up", "tween", 0.4, 2)}
-      href="#"
+      href={project.Link}
       className="block backdrop-blur-md bg-opacity-20 rounded-md bg-black p-2 m-4"
     >
       <img
@@ -28,7 +28,9 @@ const ProjectCard = ({ project }) => {
         {project.description.slice(0, 125)}...
       </p>
       <div className="mt-4 gap-2 inline-flex items-center  text-indigo-600  ">
-        <p className="font-medium sm:text-lg">Repo Link</p>
+        <p className="font-medium sm:text-lg" href={project.Link}>
+          Repo Link
+        </p>
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
