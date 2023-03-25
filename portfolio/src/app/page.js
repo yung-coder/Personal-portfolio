@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "../../components/Navbar";
 import Hero from "../../components/Hero";
-import StarsCanvas from "../../components/Stars";
+import StarsCanvas from "../../components/models/Stars";
 import { Black_Han_Sans, Reenie_Beanie, Luckiest_Guy } from "next/font/google";
 import AboutMe from "../../Sections/AboutMe";
 import Skills from "../../Sections/Skills";

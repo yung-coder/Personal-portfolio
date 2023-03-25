@@ -2,12 +2,12 @@
 
 import React from "react";
 import { styles } from "../src/app/style";
-import ComputerCanvas from "./Model";
+import ComputerCanvas from "./models/Model";
 import { motion, Variants } from "framer-motion";
 import { TypingText } from "./CustomText";
 
 import { fadeIn, staggerContainer, navVariants } from "../utils/motion";
-import EarthCanvas from "./Earth";
+import EarthCanvas from "./models/Earth";
 import Socials from "./Socials";
 
 const Hero = () => {

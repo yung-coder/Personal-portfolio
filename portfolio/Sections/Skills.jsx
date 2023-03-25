@@ -14,7 +14,7 @@ import {
   sectionVariants,
 } from "../utils/motion";
 import { TypingText } from "../components/CustomText";
-import ComputerCanvas from "../components/Model";
+import ComputerCanvas from "../components/models/Model";
 
 const Skills = () => {
   const percentage = 66;

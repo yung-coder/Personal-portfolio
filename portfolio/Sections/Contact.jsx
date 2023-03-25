@@ -2,7 +2,7 @@
 
 import React, { useRef, useState } from "react";
 import "../custom-css/contact.css";
-import PhoneCanvas from "../components/Phone";
+import PhoneCanvas from "../components/models/Phone";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";

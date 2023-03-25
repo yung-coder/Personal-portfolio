@@ -5,7 +5,7 @@ import {
   CircularProgressbarWithChildren,
 } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import RadialSeparators from "./Seprators";
+import RadialSeparators from "../utils/Seprators";
 import { motion, Variants } from "framer-motion";
 
 const SkillProgressInd = ({ techname, progress }) => {
