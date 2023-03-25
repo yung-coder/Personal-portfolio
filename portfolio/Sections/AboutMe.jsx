@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion, Variants } from "framer-motion";
-import { TypingText } from "./CustomText";
+import { TypingText } from "../components/CustomText";
 
 import {
   fadeIn,
@@ -14,8 +14,8 @@ import {
   sectionVariants,
 } from "../utils/motion";
 import { services } from "../utils/Constants";
-import ServiceCard from "./ServiceCard";
-import Socials from "./Socials";
+import ServiceCard from "../components/ServiceCard";
+import Socials from "../components/Socials";
 import { styles } from "../src/app/style";
 
 const AboutMe = () => {

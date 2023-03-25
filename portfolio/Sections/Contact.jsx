@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-import "./contact.css";
-import PhoneCanvas from "./Phone";
+import "../custom-css/contact.css";
+import PhoneCanvas from "../components/Phone";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
@@ -15,7 +15,7 @@ import {
   navVariants,
   sectionVariants,
 } from "../utils/motion";
-import { TypingText } from "./CustomText";
+import { TypingText } from "../components/CustomText";
 import { styles } from "../src/app/style";
 
 const Contact = () => {

@@ -2,14 +2,19 @@
 
 import React from "react";
 import { skills } from "../utils/Constants";
-import SkillProgressInd from "./SkillProgressInd";
-import "./skills.css";
+import SkillProgressInd from "../components/SkillProgressInd";
+import "../custom-css/skills.css";
 import { styles } from "../src/app/style";
 import { motion, Variants } from "framer-motion";
 
-import { fadeIn, staggerContainer, navVariants, sectionVariants } from "../utils/motion";
-import { TypingText } from "./CustomText";
-import ComputerCanvas from "./Model";
+import {
+  fadeIn,
+  staggerContainer,
+  navVariants,
+  sectionVariants,
+} from "../utils/motion";
+import { TypingText } from "../components/CustomText";
+import ComputerCanvas from "../components/Model";
 
 const Skills = () => {
   const percentage = 66;

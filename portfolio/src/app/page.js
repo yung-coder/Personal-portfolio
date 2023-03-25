@@ -1,15 +1,13 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "../../components/Navbar";
 import Hero from "../../components/Hero";
-import Skills from "../../components/Skills";
-import Contact from "../../components/Contact";
 import StarsCanvas from "../../components/Stars";
-import AboutMe from "../../components/AboutMe";
-import Projects from "../../components/Projects";
 import { Black_Han_Sans, Reenie_Beanie, Luckiest_Guy } from "next/font/google";
-import ProjectApi from "../../components/ProjectApi";
+import AboutMe from "../../Sections/AboutMe";
+import Skills from "../../Sections/Skills";
+import ProjectApi from "../../Sections/ProjectApi";
+import Contact from "../../Sections/Contact";
 
 const hans = Black_Han_Sans({
   weight: ["400"],

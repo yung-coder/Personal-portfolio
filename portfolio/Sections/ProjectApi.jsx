@@ -1,6 +1,6 @@
 import React from "react";
 import { client } from "../lib/client";
-import Projects from "./Projects";
+import Projects from "../components/Projects";
 
 async function ProjectApi() {
   const getData = async () => {
