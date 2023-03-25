@@ -21,8 +21,8 @@ const ProductPage = ({ projects }) => {
           textStyles={`text-white ${styles.heroHeadText} drop-shadow-lg `}
         />
       </motion.div>
-      {projects.map((project) => (
-        <ProjectCard project={project} />
+      {projects.map((project , i) => (
+        <ProjectCard project={project} key={i}/>
       ))}
     </div>
   );

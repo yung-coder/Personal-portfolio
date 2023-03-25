@@ -86,8 +86,8 @@ const AboutMe = () => {
             />
           </motion.div>
           <div className="flex  md:flex-row md:justify-center md:items-center md:space-x-3 md:space-y-0 mt-4 flex-row space-x-4 w-full p-5  overflow-scroll">
-            {services.map((service) => (
-              <ServiceCard title={service.title} img={service.img} />
+            {services.map((service ,i) => (
+              <ServiceCard title={service.title} img={service.img} key={i}/>
             ))}
           </div>
         </motion.div>

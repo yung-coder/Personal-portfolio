@@ -16,8 +16,8 @@ const ProkectSection = ({ projects }) => {
       initial="hidden"
       whileInView="show"
     >
-      {projects.map((project) => (
-        <ProjectCard project={project} />
+      {projects.map((project , i) => (
+        <ProjectCard project={project} key={i}/>
       ))}
     </motion.div>
   );

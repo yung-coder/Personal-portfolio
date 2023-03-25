@@ -50,8 +50,8 @@ const Skills = () => {
         whileInView="show"
         className="flex  w-fit h-[500px] md:max-h-full flex-wrap p-4 overflow-y-scroll justify-center items-center"
       >
-        {skills.map((skill) => (
-          <SkillProgressInd techname={skill.name} progress={skill.progress} />
+        {skills.map((skill , i) => (
+          <SkillProgressInd techname={skill.name} progress={skill.progress} key={i}/>
         ))}
       </motion.div>
     </motion.section>
