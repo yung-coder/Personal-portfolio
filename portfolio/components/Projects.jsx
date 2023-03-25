@@ -1,6 +1,6 @@
 "use client";
 
-import { ProjectsClient } from "@sanity/client";
+
 import Link from "next/link";
 import React from "react";
 import { navVariants, sectionVariants } from "../utils/motion";

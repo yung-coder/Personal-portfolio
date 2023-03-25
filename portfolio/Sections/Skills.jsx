@@ -42,7 +42,7 @@ const Skills = () => {
         initial="hidden"
         whileInView="show"
       >
-        <ComputerCanvas />
+         <ComputerCanvas /> 
       </motion.div>
       <motion.div
         variants={navVariants}

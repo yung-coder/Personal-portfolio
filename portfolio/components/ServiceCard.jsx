@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { fadeIn, staggerContainer, navVariants } from "../utils/motion";
 import { motion, Variants } from "framer-motion";

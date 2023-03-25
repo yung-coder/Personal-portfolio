@@ -29,7 +29,7 @@ const AboutMe = () => {
         />
       </motion.div>
       <div className="md:flex-row md:h-screen  flex justify-center items-center flex-col p-5  md:space-x-6">
-        <motion.div ariants={navVariants} initial="hidden" whileInView="show">
+        <motion.div variants={navVariants} initial="hidden" whileInView="show">
           <motion.a
             href="#"
             className="group relative block w-60 h-80 md:w-96  backdrop-blur-3xl"
