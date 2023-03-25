@@ -24,7 +24,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className={`bg-[#050816] ${Lucky.variable} font-sans`}>
+    <main className={` ${Lucky.variable} font-sans`}>
       <div className="relative z-0" id="home">
         <StarsCanvas />
         <Navbar />

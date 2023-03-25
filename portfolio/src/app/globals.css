@@ -6,6 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body{
+  background-color: #050816;
+}
+
 .background {
   margin-top: 0;
   /* padding: 260px 0 100px 0; */
