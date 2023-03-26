@@ -33,13 +33,9 @@ export default function Home() {
     <main className={` ${Popins.variable} font-sans`}>
       <Navbar />
       <Hero />
-      <StarsCanvas />
       <AboutMe />
-      <StarsCanvas />
       <Skills />
-      <StarsCanvas />
       <ProjectApi />
-      <StarsCanvas />
       <Contact />
     </main>
   );
