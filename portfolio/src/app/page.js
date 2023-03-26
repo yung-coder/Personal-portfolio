@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "../../components/Navbar";
 import Hero from "../../components/Hero";
 import StarsCanvas from "../../components/models/Stars";
-import { Black_Han_Sans, Reenie_Beanie, Luckiest_Guy } from "next/font/google";
+import { Black_Han_Sans, Luckiest_Guy, Poppins } from "next/font/google";
 import AboutMe from "../../Sections/AboutMe";
 import Skills from "../../Sections/Skills";
 import ProjectApi from "../../Sections/ProjectApi";
@@ -18,6 +18,12 @@ const Lucky = Luckiest_Guy({
   weight: ["400"],
   subsets: ["latin"],
   variable: "--font-lucky",
+});
+
+const Popins = Poppins({
+  weight: ["700"],
+  subsets: ["latin"],
+  variable: "--font-pop",
 });
 
 const inter = Inter({ subsets: ["latin"] });

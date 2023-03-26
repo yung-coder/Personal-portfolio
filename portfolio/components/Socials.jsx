@@ -3,6 +3,7 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
 import { navVariants } from "../utils/motion";
+import code from "../public/assets/img/leetcode.png";
 
 const Socials = () => {
   return (
@@ -34,6 +35,28 @@ const Socials = () => {
             <img
               className="h-6 w-6"
               src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img
+              className="h-6 w-6 bg-white  rounded-lg "
+              src={
+                "https://cdn.icon-icons.com/icons2/2389/PNG/512/leetcode_logo_icon_145113.png"
+              }
+              alt=""
+            />
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <img
+              className="h-6 w-6 bg-white  rounded-lg "
+              src={
+                "https://cdn.icon-icons.com/icons2/2389/PNG/512/codewars_logo_icon_145389.png"
+              }
               alt=""
             />
           </a>

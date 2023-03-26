@@ -205,7 +205,7 @@ const Contact = () => {
               />
             </svg>
           </div>
-          <div className="rounded-lg phone-background h-96 md:w-1/2 w-full cursor-pointer">
+          <div className="call-animation h-80 w-80 backdrop-blur-md">
             <PhoneCanvas />
           </div>
         </motion.a>
@@ -223,7 +223,7 @@ const Contact = () => {
         theme="dark"
       />
       <motion.div
-        className="w-full h-16 flex justify-center items-center"
+        className="w-full h-fit flex justify-end items-end p-3"
         variants={fadeIn("up", "tween", 0.2, 1)}
       >
         <a href="#home">
