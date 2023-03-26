@@ -43,7 +43,7 @@ const Hero = () => {
                 textStyles={`text-[#915EFF] ${styles.heroHeadText} drop-shadow-lg text-amber-300`}
               />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col justify-start items-start">
               <motion.p
                 variants={fadeIn("up", "tween", 0.2, 1)}
                 className={`${styles.heroSubText} mt-2 text-white-100`}

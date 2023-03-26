@@ -21,7 +21,7 @@ const Lucky = Luckiest_Guy({
 });
 
 const Popins = Poppins({
-  weight: ["700"],
+  weight: ["600"],
   subsets: ["latin"],
   variable: "--font-pop",
 });
@@ -30,7 +30,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className={` ${Lucky.variable} font-sans`}>
+    <main className={` ${Popins.variable} font-sans`}>
       <div className="relative z-0" id="home">
         <StarsCanvas />
         <Navbar />

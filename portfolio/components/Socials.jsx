@@ -8,7 +8,7 @@ import code from "../public/assets/img/leetcode.png";
 const Socials = () => {
   return (
     <motion.div
-      className="h-fit w-[270px] p-2 flex justify-start items-start"
+      className="h-fit w-[270px]  flex justify-start items-start"
       variants={navVariants}
     >
       <motion.div className="shadow-md  bg-black bg-opacity-25 backdrop-blur-md  p-4 h-14  rounded-xl flex justify-center items-center  space-x-7">

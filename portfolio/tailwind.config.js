@@ -15,7 +15,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-lucky)", ...fontFamily.sans],
+        sans: ["var(--font-pop)", ...fontFamily.sans],
       },
     },
   },

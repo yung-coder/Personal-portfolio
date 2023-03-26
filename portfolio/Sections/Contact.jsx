@@ -118,7 +118,7 @@ const Contact = () => {
       <div className="flex  flex-col md:flex-row w-full justify-center items-center">
         <div className="w-1/2  p-5 flex justify-center items-center">
           <motion.div
-            className="p-4 flex flex-col space-y-6 bg-[#151030] bg-opacity-25 backdrop-blur-lg rounded drop-shadow-lg w-fit"
+            className="p-4 flex flex-col space-y-6 bg-[#151030] bg-opacity-25 backdrop-blur-lg rounded drop-shadow-lg w-80"
             variants={fadeIn("down", "spring", 2 * 0.5, 1)}
             initial="hidden"
             whileInView="show"
