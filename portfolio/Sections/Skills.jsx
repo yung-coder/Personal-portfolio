@@ -38,7 +38,7 @@ const Skills = () => {
         />
       </motion.div>
       <motion.div
-        className="w-fit md:w-full h-96 opacity-25"
+        className="w-fit md:w-96 h-96 opacity-25"
         variants={navVariants}
         initial="hidden"
         whileInView="show"
@@ -54,13 +54,13 @@ const Skills = () => {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="currentColor"
-            class="w-6 h-6 text-white animate-bounce"
+            className="w-6 h-6 text-white animate-bounce"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3"
             />
           </svg>

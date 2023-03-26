@@ -12,8 +12,8 @@ import Socials from "./Socials";
 
 const Hero = () => {
   return (
-    <div
-      className={`h-screen   w-screen flex flex-col justify-center  items-center  md:flex-row `}
+    <section
+      className={`h-screen   flex flex-col justify-center  items-center  md:flex-row `}
     >
       <div className="flex justify-center  space-x-3   md:w-1/2  w-full md:max-h-max h-full p-2 mt-6 md:p-0 md:mt-0">
         <motion.div
@@ -71,13 +71,13 @@ const Hero = () => {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="currentColor"
-            class="w-6 h-6 text-white animate-bounce"
+            className="w-6 h-6 text-white animate-bounce"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3"
             />
           </svg>
@@ -86,7 +86,7 @@ const Hero = () => {
       <div className="w-fit  h-96 md:h-full md:w-1/2">
         <EarthCanvas />
       </div>
-    </div>
+    </section>
   );
 };
 

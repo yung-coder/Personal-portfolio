@@ -96,7 +96,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="min-h-[100vh] w-full background-contact flex flex-col justify-center items-center " id="Contact">
+    <section className="min-h-[100vh] w-full background-contact flex flex-col justify-center items-center" id="Contact">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
