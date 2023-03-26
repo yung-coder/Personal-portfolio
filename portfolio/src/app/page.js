@@ -7,6 +7,7 @@ import AboutMe from "../../Sections/AboutMe";
 import Skills from "../../Sections/Skills";
 import ProjectApi from "../../Sections/ProjectApi";
 import Contact from "../../Sections/Contact";
+import Head from "next/head";
 
 const hans = Black_Han_Sans({
   weight: ["400"],

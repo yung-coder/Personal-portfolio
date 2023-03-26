@@ -13,7 +13,7 @@ const Socials = () => {
     >
       <motion.div className="shadow-md  bg-black bg-opacity-25 backdrop-blur-md  p-2 h-14  rounded-xl flex justify-center items-center  space-x-7">
         <div>
-          <a href="">
+          <a href="https://twitter.com/_yung_tweets_?t=52cBzFnr5pKrfkFDtecWpw&s=09">
             <img
               className="h-6 w-6"
               src="https://cdn-icons-png.flaticon.com/512/3670/3670151.png"
@@ -22,7 +22,7 @@ const Socials = () => {
           </a>
         </div>
         <div>
-          <a href="">
+          <a href="https://github.com/yung-coder">
             <img
               className="h-6 w-6"
               src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
@@ -31,7 +31,7 @@ const Socials = () => {
           </a>
         </div>
         <div>
-          <a href="">
+          <a href="https://www.linkedin.com/in/saksham-chandel-yungcoder">
             <img
               className="h-6 w-6"
               src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
@@ -40,7 +40,7 @@ const Socials = () => {
           </a>
         </div>
         <div>
-          <a href="">
+          <a href="https://leetcode.com/_yung-coder_/">
             <img
               className="h-6 w-6 bg-white  rounded-lg "
               src={
@@ -51,7 +51,7 @@ const Socials = () => {
           </a>
         </div>
         <div>
-          <a href="">
+          <a href="https://www.codewars.com/users/yung-coder">
             <img
               className="h-6 w-6 bg-white  rounded-lg "
               src={
