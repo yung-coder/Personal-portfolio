@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #050816;
+}
+
+.background {
+  margin-top: 0;
+  /* padding: 260px 0 100px 0; */
+  background-image: url("../../public/assets/img/banner-bg.png");
+  background-position: top center;
+  z-index: -3;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ 

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Celly McPhoneFace
+* source:	https://sketchfab.com/3d-models/celly-mcphoneface-708c7214aa7f4c30b5656f046be7ba1a
+* author:	indierocktopus (https://sketchfab.com/indierocktopus)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Celly McPhoneFace" (https://sketchfab.com/3d-models/celly-mcphoneface-708c7214aa7f4c30b5656f046be7ba1a) by indierocktopus (https://sketchfab.com/indierocktopus) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
