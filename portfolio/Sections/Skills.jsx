@@ -37,7 +37,7 @@ const Skills = () => {
         />
       </motion.div>
       <motion.div
-        className="w-full h-96 opacity-25"
+        className="w-fit md:w-full h-96 opacity-25"
         variants={navVariants}
         initial="hidden"
         whileInView="show"

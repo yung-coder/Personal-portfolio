@@ -61,7 +61,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="w-full h-96 md:h-full md:w-1/2">
+      <div className="w-fit  h-96 md:h-full md:w-1/2">
         <EarthCanvas />
       </div>
     </div>

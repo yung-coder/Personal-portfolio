@@ -17,7 +17,7 @@ const ProjectCard = ({ project }) => {
       <img
         alt="Art"
         src={urlFor(project.image && project.image[0]).url()}
-        className="h-48 w-96 object-cover sm:h-80 lg:h-96 rounded-md"
+        className="h-44 w-96 object-cover sm:h-80 lg:h-96 rounded-md"
       />
 
       <h3 className="mt-4 text-lg font-bold text-white  sm:text-xl">
