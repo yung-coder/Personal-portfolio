@@ -31,8 +31,10 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className={` ${Popins.variable} font-sans`}>
-      <Navbar />
-      <Hero />
+      <div className="background ">
+        <Navbar />
+        <Hero />
+      </div>
       <AboutMe />
       <Skills />
       <ProjectApi />

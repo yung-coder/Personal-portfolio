@@ -1,9 +1,7 @@
-.background-skills { 
+.background-Project {
   background-color: black;
   background-image: url("../public/assets/img/color-sharp.png");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-

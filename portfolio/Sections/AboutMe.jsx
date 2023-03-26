@@ -3,7 +3,7 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
 import { TypingText } from "../components/CustomText";
-
+import '../custom-css/About.css';
 import {
   fadeIn,
   navVariants,
@@ -16,7 +16,7 @@ import { styles } from "../src/app/style";
 
 const AboutMe = () => {
   return (
-    <section className="text-white w-full max-h-full md:h-screen  flex flex-col ">
+    <section className="text-white w-full background-About max-h-full md:h-screen  flex flex-col ">
       <motion.div
         className=" w-full flex justify-center items-center  bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-t border-gray-100"
         variants={sectionVariants}

@@ -8,10 +8,11 @@ import ProkectSection from "./ProkectSection";
 import { styles } from "../src/app/style";
 import { motion, Variants } from "framer-motion";
 import { TypingText } from "./CustomText";
+import '../custom-css/Project.css';
 
 function Projects({ project }) {
   return (
-    <section className="max-h-full  w-full   md:h-screen  flex flex-col justify-center items-center">
+    <section className="max-h-full background-Project  w-full   md:h-screen  flex flex-col justify-center items-center">
       <motion.div
         className=" w-full flex justify-center items-center  bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-t border-gray-100"
         variants={sectionVariants}
