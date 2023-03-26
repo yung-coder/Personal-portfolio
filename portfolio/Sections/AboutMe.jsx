@@ -16,7 +16,7 @@ import { styles } from "../src/app/style";
 
 const AboutMe = () => {
   return (
-    <section className="text-white w-full background-About max-h-full md:h-screen  flex flex-col ">
+    <section className="text-white w-full background-About max-h-full md:h-screen  flex flex-col " id="About">
       <motion.div
         className=" w-full flex justify-center items-center  bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-t border-gray-100"
         variants={sectionVariants}

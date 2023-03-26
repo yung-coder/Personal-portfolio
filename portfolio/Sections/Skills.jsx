@@ -24,6 +24,7 @@ const Skills = () => {
       initial="hidden"
       whileInView="show"
       className="w-full   min-h-[100vh]  background-skills flex flex-col justify-between items-center "
+      id="skills"
     >
       <motion.div
         className=" w-full flex justify-center items-center  bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-t border-gray-100"
@@ -48,7 +49,7 @@ const Skills = () => {
         variants={navVariants}
         initial="hidden"
         whileInView="show"
-        className="flex  w-fit h-[500px] backdrop-blur-2xl opacity-30 border-t border-amber-200  md:backdrop-blur-0 md:opacity-0 md:border-none md:max-h-full flex-wrap p-4 overflow-y-scroll justify-center items-center"
+        className="flex  w-fit h-[500px] backdrop-blur-2xl opacity-30  md:backdrop-blur-0 md:opacity-0 md:border-none md:max-h-full flex-wrap p-4 overflow-y-scroll justify-center items-center"
       >
         {skills.map((skill, i) => (
           <SkillProgressInd

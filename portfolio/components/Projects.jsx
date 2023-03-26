@@ -12,7 +12,7 @@ import '../custom-css/Project.css';
 
 function Projects({ project }) {
   return (
-    <section className="max-h-full background-Project  w-full   md:h-screen  flex flex-col justify-center items-center">
+    <section className="max-h-full background-Project  w-full   md:h-screen  flex flex-col justify-center items-center" id="Project">
       <motion.div
         className=" w-full flex justify-center items-center  bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-t border-gray-100"
         variants={sectionVariants}

@@ -2,7 +2,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "../../components/Navbar";
 import Hero from "../../components/Hero";
-import StarsCanvas from "../../components/models/Stars";
 import { Black_Han_Sans, Luckiest_Guy, Poppins } from "next/font/google";
 import AboutMe from "../../Sections/AboutMe";
 import Skills from "../../Sections/Skills";
@@ -31,7 +30,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className={` ${Popins.variable} font-sans`}>
-      <div className="background ">
+      <div className="background " id="home">
         <Navbar />
         <Hero />
       </div>
