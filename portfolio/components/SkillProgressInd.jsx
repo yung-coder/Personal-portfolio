@@ -14,8 +14,7 @@ const SkillProgressInd = ({ techname, progress }) => {
     <>
       <motion.div
         whileHover={{ scale: 1.2 }}
-        className='w-[110px] h-[110px] md:w-[170px] md:h-[170px]  m-[31px] cursor-pointer'
-        // style={{ width: 170, height: 170, margin: "31px", cursor: "pointer" }}
+        className='w-[110px] h-[110px] md:w-[150px] md:h-[150px]  m-[31px] cursor-pointer'
       >
         <CircularProgressbarWithChildren
           value={progress}

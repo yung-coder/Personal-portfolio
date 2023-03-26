@@ -12,8 +12,6 @@
 }
 
 .call-animation {
-  width: 100px;
-  height: 100px;
   border-radius: 100%;
   border: solid 5px rgb(252, 241, 241);
   animation: call 1.5s ease infinite;
