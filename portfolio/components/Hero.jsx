@@ -13,9 +13,9 @@ import Socials from "./Socials";
 const Hero = () => {
   return (
     <div
-      className={`h-screen   w-screen flex flex-col justify-center  items-center  md:flex-row`}
+      className={`h-screen   w-screen flex flex-col justify-center  items-center  md:flex-row `}
     >
-      <div className="flex justify-center  space-x-3  max-h-max  w-1/2 ">
+      <div className="flex justify-center  space-x-3   md:w-1/2  w-full md:max-h-max h-full p-2 mt-6 md:p-0 md:mt-0">
         <motion.div
           variants={navVariants}
           initial="hidden"
@@ -23,10 +23,10 @@ const Hero = () => {
           className="flex flex-col justify-center items-center mt-5"
         >
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
-          <div className="w-1 sm:h-80 h-40 bg-[#915EFF]" />
+          <div className="w-1 h-52 md:h-60 bg-[#915EFF]" />
         </motion.div>
 
-        <div className="">
+        <div className="mt-3  flex justify-center items-center md:mt-0  md:flex-none ">
           <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -43,15 +43,16 @@ const Hero = () => {
                 textStyles={`text-[#915EFF] ${styles.heroHeadText} drop-shadow-lg text-amber-300`}
               />
             </div>
-            <div className="flex flex-col justify-start items-start">
+            <div className="flex flex-col justify-start items-start space-y-4">
               <motion.p
                 variants={fadeIn("up", "tween", 0.2, 1)}
                 className={`${styles.heroSubText} mt-2 text-white-100`}
               >
-                I develope Web apps and
-                <br className="sm:block hidden" />
-                android apps
-                <br className="sm:block hidden" />
+                Web and Android app developer
+                <br className="sm:bloc" />
+                Open Source Contributor
+                <br className="sm:block " />
+                MERN | FLUTTER
               </motion.p>
               <motion.div variants={fadeIn("up", "tween", 0.2, 1)}>
                 <Socials />

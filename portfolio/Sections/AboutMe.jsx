@@ -3,7 +3,7 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
 import { TypingText } from "../components/CustomText";
-import '../custom-css/About.css';
+import "../custom-css/About.css";
 import {
   fadeIn,
   navVariants,
@@ -16,7 +16,10 @@ import { styles } from "../src/app/style";
 
 const AboutMe = () => {
   return (
-    <section className="text-white w-full background-About max-h-full md:h-screen  flex flex-col " id="About">
+    <section
+      className="text-white w-full background-About max-h-full md:h-screen  flex flex-col "
+      id="About"
+    >
       <motion.div
         className=" w-full flex justify-center items-center  bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border-t border-gray-100"
         variants={sectionVariants}
@@ -31,7 +34,6 @@ const AboutMe = () => {
       <div className="md:flex-row md:h-screen  flex justify-center items-center flex-col p-5  md:space-x-6">
         <motion.div variants={navVariants} initial="hidden" whileInView="show">
           <motion.a
-            href="#"
             className="group relative block w-60 h-80 md:w-96  backdrop-blur-3xl"
             variants={fadeIn("up", "tween", 0.4, 2)}
           >
@@ -47,10 +49,10 @@ const AboutMe = () => {
               </p>
 
               <p className="text-xl font-bold text-white sm:text-2xl">
-                Tony Wayne
+                Saksham Chandel
               </p>
 
-              <div className="mt-36">
+              {/* <div className="mt-36">
                 <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
                   <p className="text-sm text-white">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -58,7 +60,7 @@ const AboutMe = () => {
                     doloremque reiciendis nostrum harum. Repudiandae?
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </motion.a>
         </motion.div>
@@ -79,11 +81,7 @@ const AboutMe = () => {
             className="w-full flex flex-wrap mt-4"
           >
             <TypingText
-              title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-            nesciunt, quia magnam fuga molestias pariatur explicabo minima
-            exercitationem ex ab architecto impedit temporibus, assumenda hic
-            ratione neque reprehenderit autem delectus adipisci fugiat? Cumque,
-            ipsa?"
+              title="I am  CS major student instrested in Web development and Android development with a good hold in problem solving learning about new tech while contributing to Open Source"
               textStyles="break-all text-gray-400"
             />
           </motion.div>
