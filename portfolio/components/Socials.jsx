@@ -11,7 +11,7 @@ const Socials = () => {
       className="h-fit w-[270px]  flex justify-start items-start"
       variants={navVariants}
     >
-      <motion.div className="shadow-md  bg-black bg-opacity-25 backdrop-blur-md  p-4 h-14  rounded-xl flex justify-center items-center  space-x-7">
+      <motion.div className="shadow-md  bg-black bg-opacity-25 backdrop-blur-md  p-2 h-14  rounded-xl flex justify-center items-center  space-x-7">
         <div>
           <a href="">
             <img

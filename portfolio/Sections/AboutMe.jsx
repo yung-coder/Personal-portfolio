@@ -63,7 +63,7 @@ const AboutMe = () => {
           </motion.a>
         </motion.div>
         <motion.div
-          className=" w-[350px]  md:w-[800px] justify-center space-y-3 items-center md:justify-start md:items-start h-fit p-5 flex flex-col backdrop-blur-sm rounded-md shadow-2xl "
+          className=" w-[350px] mt-9 md:mt-0 md:w-[800px] justify-center space-y-3 items-center md:justify-start md:items-start h-fit p-5 flex flex-col backdrop-blur-sm rounded-md shadow-2xl "
           variants={navVariants}
           initial="hidden"
           whileInView="show"
