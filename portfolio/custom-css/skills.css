@@ -1,4 +1,4 @@
-.background-skills { 
+.background-skills {
   background-color: black;
   background-image: url("../public/assets/img/color-sharp.png");
   background-position: top center;
@@ -6,4 +6,10 @@
   background-repeat: no-repeat;
 }
 
+.scrolbar-color {
+  scrollbar-color: rgb(214, 214, 27) red;
 
+  height: 150px;
+  width: 200px;
+  overflow-y: scroll;
+}

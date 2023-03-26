@@ -53,7 +53,7 @@ const Hero = () => {
                 android apps
                 <br className="sm:block hidden" />
               </motion.p>
-              <motion.div variants={fadeIn("up", "tween", 0.2, 1)} >
+              <motion.div variants={fadeIn("up", "tween", 0.2, 1)}>
                 <Socials />
               </motion.div>
             </div>
@@ -61,6 +61,27 @@ const Hero = () => {
         </div>
       </div>
 
+      <motion.div
+        className="mt-5 md:hidden w-full flex justify-center items-center"
+        variants={fadeIn("up", "tween", 0.2, 1)}
+      >
+        <a href="#About">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 text-white animate-bounce"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3"
+            />
+          </svg>
+        </a>
+      </motion.div>
       <div className="w-fit  h-96 md:h-full md:w-1/2">
         <EarthCanvas />
       </div>
