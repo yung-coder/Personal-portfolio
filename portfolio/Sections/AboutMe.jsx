@@ -68,7 +68,7 @@ const AboutMe = () => {
           initial="hidden"
           whileInView="show"
         >
-          <div className="flex flex-col">
+          <div className="flex flex-col  w-full">
             <h2 className="text-sm text-gray-400">INTRODUCTION</h2>
             <h1 className="text-2xl  font-bold">Overview</h1>
           </div>
@@ -87,7 +87,7 @@ const AboutMe = () => {
               textStyles="break-all text-gray-400"
             />
           </motion.div>
-          <div className="flex  md:flex-row md:justify-center md:items-center md:space-x-3 md:space-y-0 mt-4 flex-row space-x-4 w-full p-5  overflow-scroll">
+          <div className="flex  md:flex-row md:justify-center md:items-center md:space-x-3 md:space-y-0 mt-4 flex-row space-x-4 w-full p-5  overflow-scroll md:overflow-hidden">
             {services.map((service, i) => (
               <ServiceCard title={service.title} img={service.img} key={i} />
             ))}

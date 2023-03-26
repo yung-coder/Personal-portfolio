@@ -42,16 +42,20 @@ const Skills = () => {
         initial="hidden"
         whileInView="show"
       >
-         <ComputerCanvas /> 
+        <ComputerCanvas />
       </motion.div>
       <motion.div
         variants={navVariants}
         initial="hidden"
         whileInView="show"
-        className="flex  w-fit h-[500px] md:max-h-full flex-wrap p-4 overflow-y-scroll justify-center items-center"
+        className="flex  w-fit h-[500px] backdrop-blur-2xl opacity-30 border-t border-amber-200  md:backdrop-blur-0 md:opacity-0 md:border-none md:max-h-full flex-wrap p-4 overflow-y-scroll justify-center items-center"
       >
-        {skills.map((skill , i) => (
-          <SkillProgressInd techname={skill.name} progress={skill.progress} key={i}/>
+        {skills.map((skill, i) => (
+          <SkillProgressInd
+            techname={skill.name}
+            progress={skill.progress}
+            key={i}
+          />
         ))}
       </motion.div>
     </motion.section>
