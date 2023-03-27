@@ -205,7 +205,7 @@ const Contact = () => {
               />
             </svg>
           </div>
-          <div className="call-animation h-80 w-80 backdrop-blur-md">
+          <div className="call-animation h-72 w-72 backdrop-blur-md">
             <PhoneCanvas />
           </div>
         </motion.a>
