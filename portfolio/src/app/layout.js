@@ -1,3 +1,4 @@
+import Head from "next/head";
 import "./globals.css";
 
 // export const metadata = {
@@ -12,7 +13,7 @@ export default function RootLayout({ children }) {
       <meta
         name="image"
         property="og:image"
-        content="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.webp"
+        content="https://learn.g2.com/hubfs/IT%20Portfolio%20Management@2x.png"
       ></meta>
       <meta
         property="og:description"
