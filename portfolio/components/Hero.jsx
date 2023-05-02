@@ -14,13 +14,13 @@ import Head from "next/head";
 const Hero = () => {
   return (
     <>
-      <Head>
+      {/* <Head>
         <meta
           name="image"
           property="og:image"
           content="https://learn.g2.com/hubfs/IT%20Portfolio%20Management@2x.png"
         ></meta>
-      </Head>
+      </Head> */}
       <section
         className={`h-screen   flex flex-col justify-center  items-center  md:flex-row `}
       >
