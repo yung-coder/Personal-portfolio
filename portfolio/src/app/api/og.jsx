@@ -4,17 +4,29 @@ export const config = {
   runtime: "edge",
 };
 
-export default function () {
+export default async function handler() {
   return new ImageResponse(
     (
-      <>
-        <div>
-          <img
-            src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.webp"
-            alt=""
-          />
-        </div>
-      </>
-    )
+      <div
+        style={{
+          fontSize: 100,
+          color: "black",
+          background: "white",
+          width: "100%",
+          height: "100%",
+          padding: "50px 200px",
+          textAlign: "center",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        👋, 🌎
+      </div>
+    ),
+    {
+      width: 1200,
+      height: 630,
+      emoji: "twemoji",
+    }
   );
 }
