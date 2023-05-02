@@ -10,6 +10,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <meta property="og:title" content="Example Page"></meta>
       <meta
+        name="image"
         property="og:image"
         content="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.webp"
       ></meta>
