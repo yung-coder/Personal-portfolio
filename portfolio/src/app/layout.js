@@ -1,10 +1,6 @@
 import Head from "next/head";
 import "./globals.css";
 
-// export const metadata = {
-//   title: "Portfolio",
-//   description: "Made by Saksham Chandel",
-// };
 
 export default function RootLayout({ children }) {
   return (
